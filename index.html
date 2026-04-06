@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Grow Tech Agro Nig. Ltd – An Agro Alliance Company specialising in crop production, agro chemicals, fertilizers, and agricultural machinery across Nigeria." />
+  <meta name="keywords" content="agriculture Nigeria, agro chemicals, fertilizers, farm machinery, crop production, Abuja agro, Grow Tech" />
+  <meta property="og:title" content="Grow Tech Agro Nig. Ltd" />
+  <meta property="og:description" content="Delivering quality agricultural inputs and services to empower Nigerian farmers and agribusinesses." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0d3b1e" />
+  <title>Grow Tech Agro Nig. Ltd | An Agro Alliance Company</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    /* ===================== CSS VARIABLES ===================== */
+    :root {
+      --green-deep:  #0d3b1e;
+      --green-mid:   #1a6b38;
+      --green-light: #2ea84f;
+      --gold:        #c89b2a;
+      --gold-light:  #f0c84a;
+      --cream:       #f7f3eb;
+      --white:       #ffffff;
+      --text-dark:   #0d1a10;
+      --text-mid:    #3a4d3d;
+      --text-light:  #6b7f6e;
+      --radius:      12px;
+      --shadow:      0 8px 40px rgba(13,59,30,0.13);
+      --transition:  0.3s ease;
+    }
+
+    /* ===================== RESET & BASE ===================== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body { font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(--text-dark); overflow-x: hidden; }
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+    .container { width: min(1200px, 92%); margin-inline: auto; }
+    .section-label { font-size: .72rem; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: var(--gold); display: block; }
+    .section-title { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 4vw, 3rem); color: var(--green-deep); line-height: 1.15; }
+
+    /* ===================== BUTTONS ===================== */
+    .btn { display: inline-flex; align-items: center; gap: .5rem; padding: .85rem 2rem; border-radius: 50px; font-weight: 600; font-size: .95rem; cursor: pointer; transition: transform .2s, box-shadow .2s, background .2s; border: none; font-family: 'DM Sans', sans-serif; }
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 6px 24px rgba(0,0,0,.18); }
+    .btn:focus-visible { outline: 3px solid var(--gold-light); outline-offset: 3px; }
+    .btn-primary { background: var(--green-light); color: var(--white); }
+    .btn-gold    { background: var(--gold); color: var(--white); }
+    .btn-outline { background: transparent; color: var(--white); border: 2px solid var(--white); }
+    .btn-outline:hover { background: var(--white); color: var(--green-deep); }
+    .btn-dark { background: var(--green-deep); color: var(--white); }
+
+    /* ===================== SKIP LINK (a11y) ===================== */
+    .skip-link { position: absolute; left: -9999px; top: 1rem; background: var(--gold); color: var(--white); padding: .5rem 1rem; border-radius: 4px; z-index: 9999; font-weight: 600; }
+    .skip-link:focus { left: 1rem; }
+
+    /* ===================== HEADER ===================== */
+    header { position: fixed; top: 0; left: 0; width: 100%; z-index: 900; background: rgba(13,59,30,.95); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255,255,255,.08); transition: background var(--transition); }
+    header.scrolled { background: rgba(13,59,30,1); box-shadow: 0 2px 20px rgba(0,0,0,.3); }
+    nav { display: flex; align-items: center; justify-content: space-between; height: 70px; }
+    .logo { display: flex; align-items: center; gap: .75rem; }
+    .logo-icon { width: 55px; height: 55px; background: white; border-radius: 10px; padding: 2px; display: grid; place-items: center; flex-shrink: 0; overflow: hidden; }
+    .logo-icon img { width: 100%; height: 100%; object-fit: contain; }
+    .logo-text { display: flex; flex-direction: column; }
+    .logo-text strong { font-family: 'Playfair Display', serif; font-size: 1.05rem; color: var(--white); line-height: 1.1; }
+    .logo-text span { font-size: .65rem; color: var(--gold-light); letter-spacing: .1em; text-transform: uppercase; }
+    .nav-links { display: flex; align-items: center; gap: 2rem; }
+    .nav-links a { color: rgba(255,255,255,.82); font-size: .9rem; font-weight: 500; transition: color .2s; position: relative; }
+    .nav-links a::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px; background: var(--gold-light); transition: width .3s; }
+    .nav-links a:hover, .nav-links a[aria-current="page"] { color: var(--white); }
+    .nav-links a:hover::after, .nav-links a[aria-current="page"]::after { width: 100%; }
+    .nav-cta { margin-left: 1rem; }
+    .hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: .4rem; }
+    .hamburger span { display: block; width: 26px; height: 2px; background: var(--white); border-radius: 2px; transition: transform .3s, opacity .3s; }
+    .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+    .mobile-menu { display: none; flex-direction: column; background: var(--green-deep); padding: 1.5rem 1.5rem 2rem; gap: 1rem; border-top: 1px solid rgba(255,255,255,.08); }
+    .mobile-menu a { color: rgba(255,255,255,.85); font-size: 1rem; font-weight: 500; padding: .5rem 0; border-bottom: 1px solid rgba(255,255,255,.06); }
+    .mobile-menu.open { display: flex; }
+
+    /* ===================== HERO ===================== */
+    .hero { min-height: 100svh; position: relative; display: flex; align-items: center; padding-top: 70px; overflow: hidden; }
+    .hero-bg { position: absolute; inset: 0; overflow: hidden; }
+    .slide { position: absolute; inset: 0; background-size: cover; background-position: center; opacity: 0; animation: heroSlide 25s infinite; }
+    .slide:nth-child(1) { background-image: url("irrigation 1.jpg"); animation-delay: 0s; }
+    .slide:nth-child(2) { background-image: url("Large-Scale Crop Production.jpg"); animation-delay: 5s; }
+    .slide:nth-child(3) { background-image: url("Mechanised Farming.jpg"); animation-delay: 10s; }
+    .slide:nth-child(4) { background-image: url("tracktor.jpg"); animation-delay: 15s; }
+    .slide:nth-child(5) { background-image: url("spraying machine.jpg"); animation-delay: 20s; }
+    @keyframes heroSlide {
+      0%   { opacity: 0; transform: scale(1); }
+      5%   { opacity: 1; }
+      20%  { opacity: 1; transform: scale(1.06); }
+      25%  { opacity: 0; transform: scale(1.08); }
+      100% { opacity: 0; transform: scale(1); }
+    }
+    .slide-dots { position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%); display: flex; gap: .6rem; z-index: 10; }
+    .slide-dot { width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,.35); border: none; padding: 0; cursor: pointer; transition: background .3s, transform .3s; animation: dotActive 25s infinite; }
+    .slide-dot:nth-child(1) { animation-delay: 0s; }
+    .slide-dot:nth-child(2) { animation-delay: 5s; }
+    .slide-dot:nth-child(3) { animation-delay: 10s; }
+    .slide-dot:nth-child(4) { animation-delay: 15s; }
+    .slide-dot:nth-child(5) { animation-delay: 20s; }
+    @keyframes dotActive {
+      0%   { background: rgba(240,200,74,.9); transform: scale(1.3); }
+      20%  { background: rgba(240,200,74,.9); transform: scale(1.3); }
+      25%  { background: rgba(255,255,255,.35); transform: scale(1); }
+      100% { background: rgba(255,255,255,.35); transform: scale(1); }
+    }
+    .hero-overlay { position: absolute; inset: 0; background: linear-gradient(130deg, rgba(13,59,30,.92) 0%, rgba(26,107,56,.78) 55%, rgba(13,59,30,.6) 100%); }
+    .hero-shape { position: absolute; border-radius: 50%; pointer-events: none; }
+    .hero-shape-1 { width: 500px; height: 500px; border: 1px solid rgba(200,155,42,.15); right: -120px; top: 50%; transform: translateY(-50%); animation: spin 40s linear infinite; }
+    .hero-shape-2 { width: 300px; height: 300px; border: 1px solid rgba(46,168,79,.2); right: 30px; top: 50%; transform: translateY(-50%); animation: spin 25s linear infinite reverse; }
+    @keyframes spin { to { transform: translateY(-50%) rotate(360deg); } }
+    .hero-content { position: relative; z-index: 1; max-width: 680px; animation: fadeUp .9s ease both; }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(32px); } to { opacity: 1; transform: none; } }
+    .hero-badge { display: inline-flex; align-items: center; gap: .5rem; background: rgba(200,155,42,.18); border: 1px solid rgba(200,155,42,.35); color: var(--gold-light); font-size: .78rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; padding: .45rem 1rem; border-radius: 50px; margin-bottom: 1.5rem; }
+    .hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(2.6rem, 6vw, 4.5rem); color: var(--white); line-height: 1.08; margin-bottom: 1.4rem; }
+    .hero h1 em { color: var(--gold-light); font-style: normal; }
+    .hero p { color: rgba(255,255,255,.78); font-size: clamp(1rem, 2vw, 1.18rem); line-height: 1.7; margin-bottom: 2.2rem; max-width: 520px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 1rem; }
+    .hero-stats { display: flex; flex-wrap: wrap; gap: 2.5rem; margin-top: 3.5rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,.12); }
+    .hero-stat strong { display: block; font-family: 'Playfair Display', serif; font-size: 2rem; color: var(--gold-light); }
+    .hero-stat span { font-size: .82rem; color: rgba(255,255,255,.6); text-transform: uppercase; letter-spacing: .08em; }
+    /* animated counter */
+    .counter { display: inline-block; }
+
+    /* ===================== TICKER ===================== */
+    .ticker { background: var(--gold); overflow: hidden; padding: .5rem 0; }
+    .ticker-inner { display: flex; gap: 4rem; animation: tickerScroll 28s linear infinite; white-space: nowrap; }
+    .ticker-inner span { font-size: .8rem; font-weight: 600; color: var(--white); letter-spacing: .06em; text-transform: uppercase; padding-right: 4rem; border-right: 1px solid rgba(255,255,255,.3); }
+    @keyframes tickerScroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+    /* ===================== ABOUT ===================== */
+    .about { padding: 100px 0; background: var(--white); }
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
+    .about-visual { position: relative; }
+    .about-img-wrap { border-radius: 24px; overflow: hidden; aspect-ratio: 4/3; box-shadow: var(--shadow); }
+    .about-img-wrap img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s ease; }
+    .about-img-wrap:hover img { transform: scale(1.04); }
+    .about-badge-float { position: absolute; bottom: -24px; right: -24px; background: var(--gold); color: var(--white); border-radius: 16px; padding: 1rem 1.4rem; font-weight: 700; font-size: .95rem; box-shadow: var(--shadow); text-align: center; }
+    .about-badge-float span { display: block; font-size: .7rem; font-weight: 400; opacity: .85; }
+    .about-text .section-label { margin-bottom: .7rem; }
+    .about-text .section-title { margin-bottom: 1.2rem; }
+    .about-text p { color: var(--text-mid); line-height: 1.8; margin-bottom: 1rem; font-size: .97rem; }
+    .about-pillars { display: flex; gap: 1.2rem; margin-top: 1.8rem; flex-wrap: wrap; }
+    .pillar { display: flex; align-items: center; gap: .5rem; background: var(--cream); border-radius: 50px; padding: .55rem 1.1rem; font-size: .82rem; font-weight: 600; color: var(--green-deep); }
+    .pillar-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--green-light); flex-shrink: 0; }
+
+    /* ===================== SERVICES ===================== */
+    .services { padding: 100px 0; background: var(--cream); }
+    .services-header { text-align: center; margin-bottom: 3.5rem; }
+    .services-header .section-label { margin-bottom: .7rem; display: block; }
+    .services-header p { color: var(--text-light); max-width: 520px; margin-inline: auto; line-height: 1.7; }
+    .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; }
+    .service-card { background: var(--white); border-radius: var(--radius); overflow: hidden; box-shadow: 0 2px 16px rgba(13,59,30,.06); border: 1px solid rgba(13,59,30,.06); transition: transform .3s, box-shadow .3s; }
+    .service-card:hover { transform: translateY(-6px); box-shadow: var(--shadow); }
+    .service-img { width: 100%; height: 180px; object-fit: cover; display: block; }
+    .service-body { padding: 1.8rem 1.8rem 2rem; }
+    .service-icon { width: 48px; height: 48px; border-radius: 12px; background: linear-gradient(135deg, var(--green-mid), var(--green-light)); display: grid; place-items: center; font-size: 1.4rem; margin-bottom: 1rem; }
+    .service-card h3 { font-family: 'Playfair Display', serif; font-size: 1.2rem; color: var(--green-deep); margin-bottom: .55rem; }
+    .service-card p { color: var(--text-light); font-size: .88rem; line-height: 1.7; margin-bottom: 1.1rem; }
+    .service-items { display: flex; flex-direction: column; gap: .38rem; }
+    .service-item { display: flex; align-items: center; gap: .5rem; font-size: .81rem; color: var(--text-mid); font-weight: 500; }
+    .service-item::before { content: '✓'; width: 18px; height: 18px; background: rgba(46,168,79,.12); border-radius: 50%; display: grid; place-items: center; font-size: .7rem; color: var(--green-light); flex-shrink: 0; font-weight: 700; }
+
+    /* ===================== WHY ===================== */
+    .why { padding: 100px 0; background: var(--green-deep); position: relative; overflow: hidden; }
+    .why::before { content: ''; position: absolute; top: -200px; right: -200px; width: 600px; height: 600px; border-radius: 50%; background: radial-gradient(circle, rgba(46,168,79,.15) 0%, transparent 70%); pointer-events: none; }
+    .why-header { text-align: center; margin-bottom: 3.5rem; position: relative; z-index: 1; }
+    .why-header .section-label { color: var(--gold-light); margin-bottom: .7rem; display: block; }
+    .why-header .section-title { color: var(--white); margin-bottom: 1rem; }
+    .why-header p { color: rgba(255,255,255,.65); max-width: 480px; margin-inline: auto; }
+    .why-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; position: relative; z-index: 1; }
+    .why-card { background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.1); border-radius: var(--radius); padding: 2rem 1.6rem; text-align: center; transition: background .3s, transform .3s; backdrop-filter: blur(8px); }
+    .why-card:hover { background: rgba(255,255,255,.1); transform: translateY(-4px); }
+    .why-card .icon { font-size: 2.2rem; margin-bottom: 1rem; }
+    .why-card h4 { font-family: 'Playfair Display', serif; color: var(--white); font-size: 1.05rem; margin-bottom: .6rem; }
+    .why-card p { color: rgba(255,255,255,.6); font-size: .87rem; line-height: 1.65; }
+
+    /* ===================== TESTIMONIALS ===================== */
+    .testimonials { padding: 100px 0; background: var(--cream); }
+    .testimonials-header { text-align: center; margin-bottom: 3.5rem; }
+    .testimonials-header .section-label { margin-bottom: .7rem; display: block; }
+    .testimonials-track { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+    .testimonial-card { background: var(--white); border-radius: var(--radius); padding: 2rem; box-shadow: 0 2px 16px rgba(13,59,30,.06); border: 1px solid rgba(13,59,30,.06); position: relative; }
+    .testimonial-card::before { content: '"'; font-family: 'Playfair Display', serif; font-size: 5rem; color: var(--green-light); opacity: .15; position: absolute; top: .5rem; left: 1.2rem; line-height: 1; }
+    .testimonial-text { color: var(--text-mid); font-size: .95rem; line-height: 1.75; margin-bottom: 1.5rem; position: relative; z-index: 1; font-style: italic; }
+    .testimonial-author { display: flex; align-items: center; gap: .8rem; }
+    .author-avatar { width: 44px; height: 44px; border-radius: 50%; background: linear-gradient(135deg, var(--green-mid), var(--green-light)); display: grid; place-items: center; font-weight: 700; color: var(--white); font-size: 1rem; flex-shrink: 0; }
+    .author-info strong { display: block; font-size: .9rem; color: var(--green-deep); }
+    .author-info span { font-size: .78rem; color: var(--text-light); }
+    .stars { color: var(--gold); font-size: .9rem; margin-bottom: .5rem; }
+
+    /* ===================== GALLERY ===================== */
+    .gallery { padding: 100px 0; background: var(--white); }
+    .gallery-header { text-align: center; margin-bottom: 3.5rem; }
+    .gallery-header .section-label { margin-bottom: .7rem; display: block; }
+    .gallery-header p { color: var(--text-light); max-width: 520px; margin-inline: auto; line-height: 1.7; }
+    .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: 260px 260px; gap: 1rem; }
+    .gallery-item { border-radius: var(--radius); overflow: hidden; position: relative; cursor: pointer; }
+    .gallery-item.wide { grid-column: span 2; }
+    .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s ease; display: block; }
+    .gallery-item:hover img { transform: scale(1.06); }
+    .gallery-caption { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(13,59,30,.88), transparent); padding: 1.5rem 1.2rem .9rem; transform: translateY(100%); transition: transform .35s ease; }
+    .gallery-item:hover .gallery-caption { transform: none; }
+    .gallery-caption h4 { font-family: 'Playfair Display', serif; color: var(--white); font-size: 1rem; margin-bottom: .2rem; }
+    .gallery-caption p { color: rgba(255,255,255,.72); font-size: .78rem; }
+    /* Lightbox */
+    .lightbox { display: none; position: fixed; inset: 0; background: rgba(0,0,0,.9); z-index: 9999; place-items: center; }
+    .lightbox.active { display: grid; }
+    .lightbox img { max-width: 90vw; max-height: 85vh; object-fit: contain; border-radius: var(--radius); }
+    .lightbox-close { position: absolute; top: 1.5rem; right: 2rem; color: var(--white); font-size: 2rem; cursor: pointer; background: none; border: none; line-height: 1; }
+    .lightbox-nav { position: absolute; top: 50%; transform: translateY(-50%); color: var(--white); font-size: 2rem; cursor: pointer; background: rgba(255,255,255,.1); border: none; padding: .5rem 1rem; border-radius: 8px; }
+    .lightbox-nav.prev { left: 1rem; }
+    .lightbox-nav.next { right: 1rem; }
+
+    /* ===================== PRODUCTS ===================== */
+    .products { padding: 100px 0; background: var(--cream); }
+    .products-header { margin-bottom: 3.5rem; }
+    .products-header .section-label { margin-bottom: .7rem; }
+    .products-header p { color: var(--text-light); max-width: 480px; line-height: 1.7; }
+    .products-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; grid-template-rows: auto auto; gap: 1.5rem; }
+    .prod-card { border-radius: var(--radius); overflow: hidden; display: flex; flex-direction: column; justify-content: flex-end; min-height: 220px; position: relative; transition: transform .3s; }
+    .prod-card:hover { transform: scale(1.015); }
+    .prod-card.featured { grid-row: span 2; min-height: 460px; }
+    .prod-card img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+    .prod-card-inner { position: relative; z-index: 1; background: linear-gradient(to top, rgba(13,59,30,.92) 0%, rgba(13,59,30,.4) 60%, transparent 100%); padding: 1.5rem; height: 100%; display: flex; flex-direction: column; justify-content: flex-end; }
+    .prod-card h3 { font-family: 'Playfair Display', serif; color: var(--white); font-size: clamp(1rem, 2vw, 1.4rem); margin-bottom: .4rem; }
+    .prod-card p { color: rgba(255,255,255,.75); font-size: .83rem; line-height: 1.6; }
+    .prod-tag { display: inline-block; background: rgba(255,255,255,.15); border: 1px solid rgba(255,255,255,.25); color: var(--white); font-size: .7rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; padding: .3rem .75rem; border-radius: 50px; margin-bottom: .8rem; }
+
+    /* ===================== CTA STRIP ===================== */
+    .cta-strip { padding: 80px 0; background: linear-gradient(135deg, var(--gold) 0%, #d4870a 100%); text-align: center; }
+    .cta-strip h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.8rem, 4vw, 2.8rem); color: var(--white); margin-bottom: 1rem; }
+    .cta-strip p { color: rgba(255,255,255,.85); max-width: 520px; margin: 0 auto 2rem; line-height: 1.7; }
+    .cta-strip-actions { display: flex; justify-content: center; flex-wrap: wrap; gap: 1rem; }
+
+    /* ===================== CONTACT ===================== */
+    .contact { padding: 100px 0; background: var(--cream); }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 4rem; align-items: start; }
+    .contact-info .section-label { margin-bottom: .7rem; }
+    .contact-info .section-title { margin-bottom: 1.2rem; }
+    .contact-info p { color: var(--text-mid); line-height: 1.8; margin-bottom: 2rem; }
+    .contact-details { display: flex; flex-direction: column; gap: 1rem; }
+    .contact-detail { display: flex; align-items: flex-start; gap: 1rem; background: var(--white); border-radius: var(--radius); padding: 1rem 1.2rem; box-shadow: 0 2px 12px rgba(13,59,30,.06); }
+    .cd-icon { width: 40px; height: 40px; flex-shrink: 0; background: linear-gradient(135deg, var(--green-mid), var(--green-light)); border-radius: 10px; display: grid; place-items: center; font-size: 1.1rem; }
+    .cd-text strong { display: block; font-size: .82rem; color: var(--text-light); font-weight: 500; margin-bottom: .2rem; }
+    .cd-text span { color: var(--text-dark); font-weight: 600; font-size: .95rem; }
+    .contact-form { background: var(--white); border-radius: 20px; padding: 2.5rem; box-shadow: var(--shadow); }
+    .contact-form h3 { font-family: 'Playfair Display', serif; color: var(--green-deep); font-size: 1.5rem; margin-bottom: 1.8rem; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .form-group { display: flex; flex-direction: column; gap: .45rem; margin-bottom: 1.1rem; }
+    .form-group label { font-size: .82rem; font-weight: 600; color: var(--text-mid); }
+    .form-group input, .form-group select, .form-group textarea { padding: .85rem 1rem; border: 1.5px solid #e0e8e2; border-radius: 10px; font-family: 'DM Sans', sans-serif; font-size: .93rem; color: var(--text-dark); background: var(--cream); transition: border-color .2s, box-shadow .2s; outline: none; resize: none; }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--green-light); box-shadow: 0 0 0 3px rgba(46,168,79,.12); background: var(--white); }
+    .form-group textarea { min-height: 120px; }
+    .form-submit { width: 100%; justify-content: center; font-size: 1rem; padding: 1rem; }
+    /* AI Response box */
+    .ai-response { margin-top: 1.2rem; padding: 1.2rem; background: linear-gradient(135deg, rgba(13,59,30,.05), rgba(46,168,79,.08)); border: 1px solid rgba(46,168,79,.2); border-radius: 12px; display: none; }
+    .ai-response.visible { display: block; }
+    .ai-response-header { display: flex; align-items: center; gap: .5rem; font-size: .8rem; font-weight: 600; color: var(--green-mid); text-transform: uppercase; letter-spacing: .08em; margin-bottom: .6rem; }
+    .ai-response-text { font-size: .92rem; color: var(--text-mid); line-height: 1.7; }
+    .typing-indicator { display: flex; gap: 4px; align-items: center; }
+    .typing-indicator span { width: 6px; height: 6px; background: var(--green-light); border-radius: 50%; animation: bounce 1.2s infinite; }
+    .typing-indicator span:nth-child(2) { animation-delay: .2s; }
+    .typing-indicator span:nth-child(3) { animation-delay: .4s; }
+    @keyframes bounce { 0%, 60%, 100% { transform: translateY(0); } 30% { transform: translateY(-8px); } }
+    .form-success { text-align: center; padding: 2rem; display: none; }
+    .form-success.visible { display: block; }
+    .success-icon { font-size: 3rem; margin-bottom: 1rem; }
+    .form-error { color: #c62828; font-size: .82rem; margin-top: .3rem; display: none; }
+
+    /* ===================== FOOTER ===================== */
+    footer { background: var(--green-deep); color: rgba(255,255,255,.75); padding: 60px 0 28px; }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 3rem; }
+    .footer-brand .logo { margin-bottom: 1rem; }
+    .footer-brand p { font-size: .88rem; line-height: 1.75; max-width: 280px; }
+    .footer-col h5 { color: var(--white); font-size: .82rem; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 1.2rem; }
+    .footer-col a { display: block; color: rgba(255,255,255,.62); font-size: .88rem; margin-bottom: .65rem; transition: color .2s; }
+    .footer-col a:hover { color: var(--gold-light); }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,.08); padding-top: 1.5rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; font-size: .82rem; }
+    .footer-bottom span { color: rgba(255,255,255,.4); }
+    .footer-bottom strong { color: var(--gold-light); }
+
+    /* ===================== PARTNERS STRIP ===================== */
+    .partners-strip { border-top: 1px solid rgba(255,255,255,.08); padding: 2rem 0 1rem; margin-bottom: 2rem; }
+    .partners-label { text-align: center; font-size: .72rem; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: var(--gold-light); margin-bottom: 1.5rem; }
+    .partners-row { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 2rem; }
+    .partner-item { display: flex; flex-direction: column; align-items: center; gap: .5rem; opacity: .75; transition: opacity .3s, transform .3s; }
+    .partner-item:hover { opacity: 1; transform: translateY(-3px); }
+    .partner-item img { width: 72px; height: 72px; object-fit: contain; border-radius: 50%; background: white; padding: 4px; }
+    .partner-initials { width: 72px; height: 72px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: .78rem; color: white; letter-spacing: .05em; }
+    .partner-item span { font-size: .7rem; color: rgba(255,255,255,.55); text-align: center; line-height: 1.4; max-width: 90px; }
+
+    /* ===================== BACK TO TOP ===================== */
+    .back-top { position: fixed; bottom: 1.5rem; right: 1.5rem; z-index: 800; width: 46px; height: 46px; background: var(--green-light); border: none; border-radius: 50%; color: var(--white); font-size: 1.2rem; cursor: pointer; box-shadow: 0 4px 20px rgba(46,168,79,.4); display: grid; place-items: center; transition: opacity .3s, transform .3s; opacity: 0; pointer-events: none; }
+    .back-top.visible { opacity: 1; pointer-events: auto; }
+    .back-top:hover { transform: translateY(-3px); }
+
+    /* ===================== SCROLL REVEAL ===================== */
+    .reveal { opacity: 0; transform: translateY(28px); transition: opacity .7s ease, transform .7s ease; }
+    .reveal.visible { opacity: 1; transform: none; }
+    .reveal-delay-1 { transition-delay: .1s; }
+    .reveal-delay-2 { transition-delay: .2s; }
+    .reveal-delay-3 { transition-delay: .3s; }
+    .reveal-delay-4 { transition-delay: .4s; }
+
+    /* ===================== RESPONSIVE ===================== */
+    @media (max-width: 1024px) {
+      .products-grid { grid-template-columns: 1fr 1fr; }
+      .prod-card.featured { grid-row: span 1; min-height: 220px; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .gallery-grid { grid-template-columns: 1fr 1fr; grid-template-rows: 220px 220px 220px; }
+      .gallery-item.wide { grid-column: span 2; }
+    }
+    @media (max-width: 768px) {
+      .nav-links, .nav-cta { display: none; }
+      .hamburger { display: flex; }
+      .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .contact-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .form-row { grid-template-columns: 1fr; }
+      .products-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .footer-bottom { flex-direction: column; text-align: center; }
+      .hero-shape-1, .hero-shape-2 { display: none; }
+      .hero-stats { gap: 1.5rem; }
+      .gallery-grid { grid-template-columns: 1fr; grid-template-rows: none; }
+      .gallery-item, .gallery-item.wide { grid-column: span 1; height: 220px; }
+      .testimonials-track { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 480px) {
+      .contact-form { padding: 1.5rem; }
+      .hero-actions { flex-direction: column; }
+      .hero-actions .btn { width: 100%; justify-content: center; }
+      .cta-strip-actions { flex-direction: column; align-items: center; }
+    }
+
+    /* ===================== LOADING STATE ===================== */
+    .btn-loading { opacity: .7; pointer-events: none; }
+    .btn-loading::after { content: ''; display: inline-block; width: 14px; height: 14px; border: 2px solid rgba(255,255,255,.4); border-top-color: white; border-radius: 50%; animation: spin2 .7s linear infinite; margin-left: .5rem; }
+    @keyframes spin2 { to { transform: rotate(360deg); } }
+
+    /* ===================== PROGRESS BAR ===================== */
+    #progress-bar { position: fixed; top: 0; left: 0; height: 3px; background: var(--gold-light); z-index: 9999; width: 0%; transition: width .1s; }
+  </style>
+</head>
+<body>
+  <!-- Accessibility skip link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Page read progress bar -->
+  <div id="progress-bar" role="progressbar" aria-label="Page scroll progress"></div>
+
+  <!-- HEADER -->
+  <header id="site-header">
+    <nav class="container" aria-label="Main navigation">
+      <a href="#" class="logo" aria-label="Grow Tech Agro Nig. Ltd — home">
+        <div class="logo-icon">
+          <img src="logo.jpg" alt="" aria-hidden="true" />
+        </div>
+        <div class="logo-text">
+          <strong>Grow Tech Agro Nig. Ltd</strong>
+          <span>An Agro Alliance Company</span>
+        </div>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Our Work</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn btn-primary nav-cta">Get a Quote</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+    <div class="mobile-menu" id="mobile-menu" role="navigation" aria-label="Mobile navigation">
+      <a href="#about"         onclick="closeMenu()">About</a>
+      <a href="#services"      onclick="closeMenu()">Services</a>
+      <a href="#gallery"       onclick="closeMenu()">Our Work</a>
+      <a href="#products"      onclick="closeMenu()">Products</a>
+      <a href="#testimonials"  onclick="closeMenu()">Reviews</a>
+      <a href="#contact"       onclick="closeMenu()">Contact</a>
+      <a href="blog.html"     onclick="closeMenu()">Blog</a>
+      <a href="#contact" class="btn btn-primary" style="width:fit-content;" onclick="closeMenu()">Get a Quote</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main id="main-content">
+  <section class="hero" id="home" aria-label="Hero banner">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="slide"></div>
+      <div class="slide"></div>
+      <div class="slide"></div>
+      <div class="slide"></div>
+      <div class="slide"></div>
+    </div>
+    <div class="slide-dots" aria-hidden="true">
+      <button class="slide-dot" aria-label="Slide 1"></button>
+      <button class="slide-dot" aria-label="Slide 2"></button>
+      <button class="slide-dot" aria-label="Slide 3"></button>
+      <button class="slide-dot" aria-label="Slide 4"></button>
+      <button class="slide-dot" aria-label="Slide 5"></button>
+    </div>
+    <div class="hero-overlay" aria-hidden="true"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">🌾 Agro Alliance Company · Nigeria</div>
+        <h1>Growing Nigeria's<br /><em>Agricultural Future</em></h1>
+        <p>Grow Tech Nig Ltd delivers end-to-end agricultural solutions — from premium crop production to quality chemicals, fertilizers, and modern farming machinery.</p>
+        <div class="hero-actions">
+          <a href="#services" class="btn btn-primary">Explore Services ↓</a>
+          <a href="#contact"  class="btn btn-outline">Talk to an Expert</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <strong><span class="counter" data-target="500">0</span>+</strong>
+            <span>Farmers Served</span>
+          </div>
+          <div class="hero-stat">
+            <strong><span class="counter" data-target="4">0</span></strong>
+            <span>Core Divisions</span>
+          </div>
+          <div class="hero-stat">
+            <strong><span class="counter" data-target="100">0</span>%</strong>
+            <span>Nigerian Owned</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-shape hero-shape-1" aria-hidden="true"></div>
+    <div class="hero-shape hero-shape-2" aria-hidden="true"></div>
+  </section>
+
+  <!-- TICKER -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-inner">
+      <span>🌾 Crop Production</span>
+      <span>🧪 Agro Chemicals</span>
+      <span>🪣 Fertilizers</span>
+      <span>🚜 Farm Machinery</span>
+      <span>💧 Irrigation Systems</span>
+      <span>🌱 Certified Seeds</span>
+      <span>📊 Agronomic Advisory</span>
+      <span>🇳🇬 Serving All of Nigeria</span>
+      <!-- duplicated for seamless loop -->
+      <span>🌾 Crop Production</span>
+      <span>🧪 Agro Chemicals</span>
+      <span>🪣 Fertilizers</span>
+      <span>🚜 Farm Machinery</span>
+      <span>💧 Irrigation Systems</span>
+      <span>🌱 Certified Seeds</span>
+      <span>📊 Agronomic Advisory</span>
+      <span>🇳🇬 Serving All of Nigeria</span>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual reveal">
+          <div class="about-img-wrap">
+            <img src="Farmer Training.jpg" alt="Grow Tech agronomists conducting farmer training session in Nigeria" loading="lazy" width="600" height="450" />
+          </div>
+          <div class="about-badge-float">
+            Trusted Partner<br />
+            <span>in Nigerian Agriculture</span>
+          </div>
+        </div>
+        <div class="about-text">
+          <span class="section-label reveal">Who We Are</span>
+          <h2 class="section-title reveal reveal-delay-1">Powering Agriculture<br />Across Nigeria</h2>
+          <p class="reveal reveal-delay-2">Grow Tech Nigeria Ltd is a proud member of the <strong>Agro Alliance</strong> family. We are committed to transforming the Nigerian agricultural landscape through innovation, quality inputs, and modern farming technologies.</p>
+          <p class="reveal reveal-delay-2">Our integrated approach bridges the gap between the farm and the market — supplying farmers, cooperatives, and agribusinesses with everything they need to thrive in today's competitive agricultural environment.</p>
+          <div class="about-pillars reveal reveal-delay-3">
+            <div class="pillar"><span class="pillar-dot"></span>Crop Production</div>
+            <div class="pillar"><span class="pillar-dot"></span>Agro Chemicals</div>
+            <div class="pillar"><span class="pillar-dot"></span>Fertilizers</div>
+            <div class="pillar"><span class="pillar-dot"></span>Farm Machinery</div>
+          </div>
+          <div style="margin-top:2rem;" class="reveal reveal-delay-4">
+            <a href="#contact" class="btn btn-primary">Partner With Us →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="services-header reveal">
+        <span class="section-label">What We Do</span>
+        <h2 class="section-title">Our Core Services</h2>
+        <p>Comprehensive agricultural solutions designed for Nigerian farmers and agribusinesses.</p>
+      </div>
+      <div class="services-grid">
+        <article class="service-card reveal reveal-delay-1">
+          <img class="service-img" src="Crop Production.jpg" alt="Large-scale crop production fields managed by Grow Tech" loading="lazy" width="400" height="180" />
+          <div class="service-body">
+            <div class="service-icon" aria-hidden="true">🌾</div>
+            <h3>Crop Production</h3>
+            <p>Commercial production of high-yield crops using certified seeds, modern agronomic practices, and sustainable farming techniques.</p>
+            <div class="service-items">
+              <div class="service-item">Certified Seed Supply</div>
+              <div class="service-item">Agronomic Advisory</div>
+              <div class="service-item">Harvest &amp; Post-Harvest Support</div>
+              <div class="service-item">Contract Farming Options</div>
+            </div>
+          </div>
+        </article>
+        <article class="service-card reveal reveal-delay-2">
+          <img class="service-img" src="Pesticides & Herbicides.jpg" alt="Registered pesticides and herbicides for crop protection" loading="lazy" width="400" height="180" />
+          <div class="service-body">
+            <div class="service-icon" aria-hidden="true">🧪</div>
+            <h3>Agricultural Chemicals</h3>
+            <p>Supply of quality, registered pesticides, herbicides, fungicides, and bio-stimulants for effective crop protection.</p>
+            <div class="service-items">
+              <div class="service-item">Herbicides &amp; Fungicides</div>
+              <div class="service-item">Insecticides &amp; Nematicides</div>
+              <div class="service-item">Bio-stimulants</div>
+              <div class="service-item">Bulk &amp; Retail Supply</div>
+            </div>
+          </div>
+        </article>
+        <article class="service-card reveal reveal-delay-3">
+          <img class="service-img" src="naspack spary.jpg" alt="NPK and organic fertilizer blends for all soil types" loading="lazy" width="400" height="180" />
+          <div class="service-body">
+            <div class="service-icon" aria-hidden="true">🪣</div>
+            <h3>Fertilizers</h3>
+            <p>A wide range of organic, inorganic, and blended fertilizers to boost soil fertility and maximise crop yields.</p>
+            <div class="service-items">
+              <div class="service-item">NPK Blended Fertilizers</div>
+              <div class="service-item">Urea &amp; CAN</div>
+              <div class="service-item">Organic Fertilizers</div>
+              <div class="service-item">Soil Testing Advisory</div>
+            </div>
+          </div>
+        </article>
+        <article class="service-card reveal reveal-delay-4">
+          <img class="service-img" src="Tractors & Implement.jpg" alt="Modern tractors and farm implements supplied by Grow Tech" loading="lazy" width="400" height="180" />
+          <div class="service-body">
+            <div class="service-icon" aria-hidden="true">🚜</div>
+            <h3>Agricultural Machinery</h3>
+            <p>Sales, supply, and after-sales support for tractors, irrigation systems, and a wide array of farm equipment.</p>
+            <div class="service-items">
+              <div class="service-item">Tractors &amp; Implements</div>
+              <div class="service-item">Irrigation Equipment</div>
+              <div class="service-item">Processing Machines</div>
+              <div class="service-item">Spare Parts &amp; Servicing</div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section class="why" aria-labelledby="why-heading">
+    <div class="container">
+      <div class="why-header reveal">
+        <span class="section-label">Why Choose Us</span>
+        <h2 class="section-title" id="why-heading">The Agro Tech Advantage</h2>
+        <p>We combine local expertise with international standards to deliver results you can count on.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card reveal reveal-delay-1">
+          <div class="icon" aria-hidden="true">🏅</div>
+          <h4>Quality Assured</h4>
+          <p>All our inputs are sourced from certified manufacturers and tested to meet Nigerian &amp; international quality standards.</p>
+        </div>
+        <div class="why-card reveal reveal-delay-2">
+          <div class="icon" aria-hidden="true">🤝</div>
+          <h4>Alliance Network</h4>
+          <p>As part of the Agro Alliance family, we tap into a powerful network of partners, distributors, and research institutions.</p>
+        </div>
+        <div class="why-card reveal reveal-delay-3">
+          <div class="icon" aria-hidden="true">📦</div>
+          <h4>Nationwide Reach</h4>
+          <p>We deliver products and services to farmers and businesses across all geopolitical zones of Nigeria.</p>
+        </div>
+        <div class="why-card reveal reveal-delay-4">
+          <div class="icon" aria-hidden="true">💡</div>
+          <h4>Expert Advisory</h4>
+          <p>Our team of agronomists and agric engineers provide hands-on support to help you make the best decisions for your farm.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS (NEW) -->
+  <section class="testimonials" id="testimonials" aria-labelledby="testimonials-heading">
+    <div class="container">
+      <div class="testimonials-header reveal">
+        <span class="section-label">What Farmers Say</span>
+        <h2 class="section-title" id="testimonials-heading">Trusted Across Nigeria</h2>
+      </div>
+      <div class="testimonials-track">
+        <div class="testimonial-card reveal reveal-delay-1">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="testimonial-text">Grow Tech supplied us with top-quality NPK fertilizers for our maize farm in Benue. The yield improvement was remarkable — over 40% increase compared to previous seasons.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" aria-hidden="true">IA</div>
+            <div class="author-info">
+              <strong>Ibrahim Aliyu</strong>
+              <span>Maize Farmer, Benue State</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal reveal-delay-2">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="testimonial-text">The irrigation system they installed transformed our dry-season farming. We now cultivate year-round, and the after-sales support has been exceptional.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" aria-hidden="true">AO</div>
+            <div class="author-info">
+              <strong>Adaobi Okonkwo</strong>
+              <span>Vegetable Farm Owner, Niger State</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal reveal-delay-3">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="testimonial-text">Our cooperative has been buying chemicals and fertilizers from Grow Tech for two years. Prices are fair, quality is guaranteed, and delivery is always on time.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" aria-hidden="true">MG</div>
+            <div class="author-info">
+              <strong>Musa Garba</strong>
+              <span>Farmers Cooperative, Kaduna</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUR WORK GALLERY -->
+  <section class="gallery" id="gallery" aria-labelledby="gallery-heading">
+    <div class="container">
+      <div class="gallery-header reveal">
+        <span class="section-label">Our Work</span>
+        <h2 class="section-title" id="gallery-heading">Jobs Done in the Field</h2>
+        <p>A glimpse of the work we do across Nigeria — from farm inputs to mechanised operations and harvest support.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item reveal reveal-delay-1" onclick="openLightbox(0)" tabindex="0" role="button" aria-label="View: Large-Scale Crop Production">
+          <img src="Large-Scale Crop Production.jpg" alt="Large scale crop production operations in Northern Nigeria" loading="lazy" width="400" height="260" />
+          <div class="gallery-caption">
+            <h4>Large-Scale Crop Production</h4>
+            <p>Commercial farming operations across Northern &amp; Middle Belt Nigeria</p>
+          </div>
+        </div>
+        <div class="gallery-item reveal reveal-delay-2" onclick="openLightbox(1)" tabindex="0" role="button" aria-label="View: Harvest Support">
+          <img src="Harvest Support.jpg" alt="Harvest support and post-harvest handling services" loading="lazy" width="400" height="260" />
+          <div class="gallery-caption">
+            <h4>Harvest Support</h4>
+            <p>Post-harvest handling and storage advisory</p>
+          </div>
+        </div>
+        <div class="gallery-item reveal reveal-delay-2" onclick="openLightbox(2)" tabindex="0" role="button" aria-label="View: Farmer Training">
+          <img src="Farmer Training.jpg" alt="Agronomists conducting hands-on farmer training sessions" loading="lazy" width="400" height="260" />
+          <div class="gallery-caption">
+            <h4>Farmer Training</h4>
+            <p>Hands-on agronomic advisory sessions</p>
+          </div>
+        </div>
+        <div class="gallery-item wide reveal reveal-delay-3" onclick="openLightbox(3)" tabindex="0" role="button" aria-label="View: Irrigation System Installation">
+          <img src="Irrigation system.jpg" alt="Drip and sprinkler irrigation system installation on farm" loading="lazy" width="800" height="260" />
+          <div class="gallery-caption">
+            <h4>Irrigation System Installation</h4>
+            <p>Drip and sprinkler systems deployed across dry-season farms</p>
+          </div>
+        </div>
+        <div class="gallery-item reveal reveal-delay-4" onclick="openLightbox(4)" tabindex="0" role="button" aria-label="View: Mechanised Farming">
+          <img src="Mechanised Farming.jpg" alt="Tractor hire and mechanised land preparation services" loading="lazy" width="400" height="260" />
+          <div class="gallery-caption">
+            <h4>Mechanised Farming</h4>
+            <p>Tractor hire and land preparation services</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close image viewer">×</button>
+    <button class="lightbox-nav prev" onclick="lightboxNav(-1)" aria-label="Previous image">‹</button>
+    <img src="" alt="" id="lightbox-img" />
+    <button class="lightbox-nav next" onclick="lightboxNav(1)" aria-label="Next image">›</button>
+  </div>
+
+  <!-- PRODUCTS HIGHLIGHT -->
+  <section class="products" id="products" aria-labelledby="products-heading">
+    <div class="container">
+      <div class="products-header reveal">
+        <span class="section-label">Our Portfolio</span>
+        <h2 class="section-title" id="products-heading">What We Offer</h2>
+        <p>Explore the breadth of products and services that make Grow Tech Nigeria your one-stop agric partner.</p>
+      </div>
+      <div class="products-grid">
+        <div class="prod-card featured reveal">
+          <img src="Farmer Training.jpg" alt="Crop production and farm services by Grow Tech Nigeria" loading="lazy" />
+          <div class="prod-card-inner">
+            <span class="prod-tag">Flagship</span>
+            <h3>Crop Production &amp; Farm Services</h3>
+            <p>From land preparation to harvest — comprehensive support for smallholder and commercial farms alike.</p>
+          </div>
+        </div>
+        <div class="prod-card reveal reveal-delay-1">
+          <img src="Pesticides & Herbicides.jpg" alt="Registered pesticides and herbicides" loading="lazy" />
+          <div class="prod-card-inner">
+            <span class="prod-tag">Chemicals</span>
+            <h3>Pesticides &amp; Herbicides</h3>
+            <p>Registered and effective crop protection products.</p>
+          </div>
+        </div>
+        <div class="prod-card reveal reveal-delay-2">
+          <img src="7NPK & Organic Blends.jpg" alt="7NPK and organic fertilizer blends" loading="lazy" />
+          <div class="prod-card-inner">
+            <span class="prod-tag">Fertilizers</span>
+            <h3>NPK &amp; Organic Blends</h3>
+            <p>Tailored nutrition for every crop type and soil.</p>
+          </div>
+        </div>
+        <div class="prod-card reveal reveal-delay-1">
+          <img src="tracktor.jpg" alt="Modern tractors and agricultural implements" loading="lazy" />
+          <div class="prod-card-inner">
+            <span class="prod-tag">Machinery</span>
+            <h3>Tractors &amp; Implements</h3>
+            <p>Modern farm equipment for efficient mechanisation.</p>
+          </div>
+        </div>
+        <div class="prod-card reveal reveal-delay-2">
+          <img src="Irrigation system.jpg" alt="Drip and sprinkler irrigation systems" loading="lazy" />
+          <div class="prod-card-inner">
+            <span class="prod-tag">Irrigation</span>
+            <h3>Irrigation Systems</h3>
+            <p>Drip, sprinkler and surface irrigation solutions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA STRIP -->
+  <section class="cta-strip" aria-labelledby="cta-heading">
+    <div class="container">
+      <h2 id="cta-heading">Ready to Grow with Us?</h2>
+      <p>Whether you're a smallholder farmer, cooperative, or large agribusiness — we have the tools and expertise to help you succeed.</p>
+      <div class="cta-strip-actions">
+        <a href="#contact" class="btn btn-dark">Contact Us Today →</a>
+        <a href="tel:+2348038382777" class="btn btn-outline">📞 Call Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT with AI-powered responses -->
+  <section class="contact" id="contact" aria-labelledby="contact-heading">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <span class="section-label reveal">Get In Touch</span>
+          <h2 class="section-title reveal reveal-delay-1" id="contact-heading">Let's Talk Agriculture</h2>
+          <p class="reveal reveal-delay-2">Reach out to our team for product inquiries, bulk orders, technical advisory, or partnership opportunities. We're here to help your farm and business thrive.</p>
+          <div class="contact-details reveal reveal-delay-3">
+            <div class="contact-detail">
+              <div class="cd-icon" aria-hidden="true">📍</div>
+              <div class="cd-text">
+                <strong>Office Address</strong>
+                <span>Room 317, Block D, Old Federal Secretariat, Area 1-Durumi Garki, Abuja.</span>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="cd-icon" aria-hidden="true">📞</div>
+              <div class="cd-text">
+                <strong>Phone</strong>
+                <span><a href="tel:+2348038382777">+234 803 838 2777</a></span>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="cd-icon" aria-hidden="true">✉️</div>
+              <div class="cd-text">
+                <strong>Email</strong>
+                <span><a href="mailto:castor505050@gmail.com">castor505050@gmail.com</a></span>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="cd-icon" aria-hidden="true">🕒</div>
+              <div class="cd-text">
+                <strong>Working Hours</strong>
+                <span>Mon – Sat: 8 AM – 6 PM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form reveal reveal-delay-2">
+          <h3>Send Us a Message</h3>
+          <div id="form-wrapper">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="first-name">First Name <span aria-hidden="true">*</span></label>
+                <input type="text" id="first-name" name="firstName" placeholder="e.g. Chukwuemeka" required autocomplete="given-name" />
+                <span class="form-error" id="err-fname">Please enter your first name.</span>
+              </div>
+              <div class="form-group">
+                <label for="last-name">Last Name <span aria-hidden="true">*</span></label>
+                <input type="text" id="last-name" name="lastName" placeholder="e.g. Okafor" required autocomplete="family-name" />
+                <span class="form-error" id="err-lname">Please enter your last name.</span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address <span aria-hidden="true">*</span></label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email" />
+              <span class="form-error" id="err-email">Please enter a valid email address.</span>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="+234 800 000 0000" autocomplete="tel" />
+            </div>
+            <div class="form-group">
+              <label for="service">Service Interest</label>
+              <select id="service" name="service">
+                <option value="">Select a service…</option>
+                <option>Crop Production</option>
+                <option>Agricultural Chemicals</option>
+                <option>Fertilizers</option>
+                <option>Agricultural Machinery</option>
+                <option>Irrigation Systems</option>
+                <option>General Inquiry</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message <span aria-hidden="true">*</span></label>
+              <textarea id="message" name="message" placeholder="Tell us about your farm needs or inquiry…" required></textarea>
+              <span class="form-error" id="err-message">Please enter your message.</span>
+            </div>
+            <button class="btn btn-primary form-submit" id="submit-btn" type="button" onclick="submitForm()">
+              Send Message ✉️
+            </button>
+
+            <!-- AI-powered auto-response area -->
+            <div class="ai-response" id="ai-response" aria-live="polite">
+              <div class="ai-response-header">
+                <span>🤖</span> Grow Tech AI Assistant
+              </div>
+              <div id="ai-response-content">
+                <div class="typing-indicator" id="typing">
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="ai-response-text" id="ai-text" style="display:none;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Success state -->
+          <div class="form-success" id="form-success">
+            <div class="success-icon">✅</div>
+            <h4 style="font-family:'Playfair Display',serif;color:var(--green-deep);margin-bottom:.5rem;">Message Sent!</h4>
+            <p style="color:var(--text-mid);font-size:.95rem;">Thank you for reaching out. Our team will contact you within one business day.</p>
+            <button class="btn btn-primary" style="margin-top:1.5rem;" onclick="resetForm()">Send Another Message</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+            <div class="logo-icon">
+              <img src="logo.jpg" alt="Grow Tech Agro Logo" loading="lazy" />
+            </div>
+            <div class="logo-text">
+              <strong>Grow Tech Agro Nig. Ltd</strong>
+              <span>An Agro Alliance Company</span>
+            </div>
+          </div>
+          <p>Delivering quality agricultural inputs and services to empower Nigerian farmers and agribusinesses for a food-secure future.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Services</h5>
+          <a href="#services">Crop Production</a>
+          <a href="#services">Agro Chemicals</a>
+          <a href="#services">Fertilizers</a>
+          <a href="#services">Farm Machinery</a>
+          <a href="#services">Irrigation Systems</a>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <a href="#about">About Us</a>
+          <a href="#gallery">Our Work</a>
+          <a href="#products">Our Products</a>
+          <a href="#testimonials">Reviews</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <a href="tel:+2348038382777">+234 803 838 2777</a>
+          <a href="mailto:castor505050@gmail.com">castor505050@gmail.com</a>
+          <a href="#contact">Room 317, Block D, Old Federal Secretariat, Abuja</a>
+          <a href="#contact">Mon–Sat · 8AM–6PM</a>
+        </div>
+      </div>
+
+      <!-- PARTNERS STRIP -->
+      <div class="partners-strip">
+        <p class="partners-label">Our Partners &amp; Agencies</p>
+        <div class="partners-row">
+
+          <div class="partner-item">
+            <div class="partner-initials"> <img src="Castor growers processors and marketers association of Nigeria (1).jpg" alt="CASGPAM logo">
+            </div>
+            <span>CASGPMAN</span>
+          </div>
+
+          <div class="partner-item">
+            <div class="partner-initials"> <img src="FMITI LOGO.png" alt="FMITI logo">
+            </div>
+            <span>Fed. Min. of Industry, Trade &amp; Investment</span>
+          </div>
+
+          <div class="partner-item">
+            <div class="partner-initials"> <img src="FACAN logo.jpg" alt="FACAN logo">
+            </div>
+            <span>Federation of Commodity Assoc. of Nigeria</span>
+          </div>
+
+          <div class="partner-item">
+            <div class="partner-initials"> <img src="Ministry of agric logo.jpg" alt="FMA&FS logo">
+            </div>
+            <span>Federal Ministry of Agriculture</span>
+          </div>
+
+          <div class="partner-item">
+            <div class="partner-initials"> <img src="rawmateria logo.jpg" alt="RMRDC logo">
+            </div>
+            <span>Raw Materials Research &amp; Dev. Council</span>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 Grow Tech Agro Nig. Ltd · An <strong>Agro Alliance</strong> Company. All rights reserved.</span>
+        <span>Built for Nigerian Agriculture 🌾</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
+
+  <script>
+    /* ===================== HAMBURGER MENU ===================== */
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+    hamburger.addEventListener('click', () => {
+      const isOpen = hamburger.classList.toggle('open');
+      mobileMenu.classList.toggle('open');
+      hamburger.setAttribute('aria-expanded', isOpen);
+    });
+    function closeMenu() {
+      hamburger.classList.remove('open');
+      mobileMenu.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+    }
+
+    /* ===================== SCROLL EFFECTS ===================== */
+    const header = document.getElementById('site-header');
+    const backTop = document.getElementById('backTop');
+    const progressBar = document.getElementById('progress-bar');
+
+    window.addEventListener('scroll', () => {
+      const scrolled = window.scrollY;
+      // Header shadow
+      header.classList.toggle('scrolled', scrolled > 50);
+      // Back to top
+      backTop.classList.toggle('visible', scrolled > 400);
+      // Progress bar
+      const docH = document.documentElement.scrollHeight - window.innerHeight;
+      progressBar.style.width = docH > 0 ? (scrolled / docH * 100) + '%' : '0%';
+    });
+
+    /* ===================== SCROLL REVEAL ===================== */
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    reveals.forEach(el => observer.observe(el));
+
+    /* ===================== ANIMATED COUNTERS ===================== */
+    const counters = document.querySelectorAll('.counter');
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const el = entry.target;
+        const target = parseInt(el.dataset.target);
+        const duration = 1800;
+        const start = Date.now();
+        const tick = () => {
+          const elapsed = Date.now() - start;
+          const progress = Math.min(elapsed / duration, 1);
+          const ease = 1 - Math.pow(1 - progress, 3);
+          el.textContent = Math.round(ease * target);
+          if (progress < 1) requestAnimationFrame(tick);
+        };
+        requestAnimationFrame(tick);
+        counterObserver.unobserve(el);
+      });
+    }, { threshold: 0.5 });
+    counters.forEach(el => counterObserver.observe(el));
+
+    /* ===================== LIGHTBOX ===================== */
+    const galleryImages = [
+      { src: 'Large-Scale Crop Production.jpg', alt: 'Large-Scale Crop Production' },
+      { src: 'Harvest Support.jpg', alt: 'Harvest Support' },
+      { src: 'Farmer Training.jpg', alt: 'Farmer Training' },
+      { src: 'Irrigation system.jpg', alt: 'Irrigation System Installation' },
+      { src: 'Mechanised Farming.jpg', alt: 'Mechanised Farming' },
+    ];
+    let currentLightboxIdx = 0;
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+
+    function openLightbox(idx) {
+      currentLightboxIdx = idx;
+      lightboxImg.src = galleryImages[idx].src;
+      lightboxImg.alt = galleryImages[idx].alt;
+      lightbox.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeLightbox() {
+      lightbox.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+    function lightboxNav(dir) {
+      currentLightboxIdx = (currentLightboxIdx + dir + galleryImages.length) % galleryImages.length;
+      lightboxImg.src = galleryImages[currentLightboxIdx].src;
+      lightboxImg.alt = galleryImages[currentLightboxIdx].alt;
+    }
+    lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLightbox(); });
+    document.addEventListener('keydown', e => {
+      if (!lightbox.classList.contains('active')) return;
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowLeft') lightboxNav(-1);
+      if (e.key === 'ArrowRight') lightboxNav(1);
+    });
+    // Keyboard support for gallery items
+    document.querySelectorAll('.gallery-item[tabindex]').forEach((item, idx) => {
+      item.addEventListener('keypress', e => { if (e.key === 'Enter' || e.key === ' ') openLightbox(idx); });
+    });
+
+    /* ===================== AI-POWERED CONTACT FORM ===================== */
+    function validateForm() {
+      let valid = true;
+      const fields = [
+        { id: 'first-name', errId: 'err-fname' },
+        { id: 'last-name',  errId: 'err-lname' },
+        { id: 'email',      errId: 'err-email' },
+        { id: 'message',    errId: 'err-message' },
+      ];
+      fields.forEach(({ id, errId }) => {
+        const input = document.getElementById(id);
+        const err   = document.getElementById(errId);
+        const isEmpty = !input.value.trim();
+        const isEmailBad = id === 'email' && input.value && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(input.value);
+        if (isEmpty || isEmailBad) {
+          input.style.borderColor = '#c62828';
+          err.style.display = 'block';
+          valid = false;
+        } else {
+          input.style.borderColor = '';
+          err.style.display = 'none';
+        }
+      });
+      return valid;
+    }
+
+    async function submitForm() {
+      if (!validateForm()) return;
+
+      const btn = document.getElementById('submit-btn');
+      btn.classList.add('btn-loading');
+      btn.textContent = 'Sending…';
+
+      const firstName = document.getElementById('first-name').value.trim();
+      const lastName  = document.getElementById('last-name').value.trim();
+      const service   = document.getElementById('service').value || 'General Inquiry';
+      const message   = document.getElementById('message').value.trim();
+
+      // Show AI response box with typing indicator
+      const aiBox     = document.getElementById('ai-response');
+      const typing    = document.getElementById('typing');
+      const aiText    = document.getElementById('ai-text');
+      aiBox.classList.add('visible');
+      typing.style.display = 'flex';
+      aiText.style.display = 'none';
+
+      try {
+        const response = await fetch('https://api.anthropic.com/v1/messages', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            model: 'claude-sonnet-4-20250514',
+            max_tokens: 1000,
+            system: `You are a friendly, knowledgeable customer service representative for Grow Tech Agro Nig. Ltd, an agricultural company in Nigeria that is part of the Agro Alliance family. The company provides: crop production, agro chemicals (pesticides, herbicides, fungicides), fertilizers (NPK, urea, organic), and agricultural machinery (tractors, irrigation systems). 
+
+Write a warm, professional, helpful auto-reply to this customer inquiry. Keep it concise (3-4 sentences). Address the customer by first name. Acknowledge their specific service interest. Mention that a team member will follow up within one business day. Sign off as "The Grow Tech Agro Team". Do NOT use markdown formatting.`,
+            messages: [{
+              role: 'user',
+              content: `Customer name: ${firstName} ${lastName}\nService interest: ${service}\nMessage: ${message}`
+            }]
+          })
+        });
+
+        const data = await response.json();
+        const replyText = data.content?.[0]?.text || 'Thank you for your message! Our team will be in touch shortly.';
+
+        typing.style.display = 'none';
+        aiText.style.display = 'block';
+        // Typewriter effect
+        aiText.textContent = '';
+        let i = 0;
+        const typeInterval = setInterval(() => {
+          aiText.textContent += replyText[i];
+          i++;
+          if (i >= replyText.length) {
+            clearInterval(typeInterval);
+            // After 3 seconds, show success state
+            setTimeout(() => {
+              document.getElementById('form-wrapper').style.display = 'none';
+              document.getElementById('form-success').classList.add('visible');
+            }, 3000);
+          }
+        }, 18);
+
+      } catch (err) {
+        // Graceful fallback if API fails
+        typing.style.display = 'none';
+        aiText.style.display = 'block';
+        aiText.textContent = `Thank you, ${firstName}! We've received your inquiry about ${service}. One of our agricultural specialists will contact you within one business day. — The Grow Tech Agro Team`;
+        setTimeout(() => {
+          document.getElementById('form-wrapper').style.display = 'none';
+          document.getElementById('form-success').classList.add('visible');
+        }, 3500);
+      }
+
+      btn.classList.remove('btn-loading');
+    }
+
+    function resetForm() {
+      document.getElementById('form-wrapper').style.display = '';
+      document.getElementById('form-success').classList.remove('visible');
+      document.getElementById('ai-response').classList.remove('visible');
+      document.getElementById('first-name').value = '';
+      document.getElementById('last-name').value = '';
+      document.getElementById('email').value = '';
+      document.getElementById('phone').value = '';
+      document.getElementById('service').value = '';
+      document.getElementById('message').value = '';
+      document.getElementById('submit-btn').textContent = 'Send Message ✉️';
+    }
+  </script>
+</body>
+</html>
