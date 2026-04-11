@@ -11,12 +11,21 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://growtechagro.com.ng/">
   <meta name="theme-color" content="#0d3b1e" />
-  <meta name="google-site-verification" content=google-site-verification=vsXBuz-w0NrH_RKLnOiJF_4071R-tnXgig-h-1f1tJ4 />
+  <meta name="google-site-verification" content="vsXBuz-w0NrH_RKLnOiJF_4071R-tnXgig-h-1f1tJ4" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Growtech Agro",
+    "url": "https://growtechagro.com.ng",
+    "logo": "https://growtechagro.com.ng/images/logo.jpg"
+  }
+  </script>
   <title>Grow Tech Agro Nig. Ltd | An Agro Alliance Company</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="sitemap" type="application/xml"title="sitemap" href="https://growtechagro.com.ng/sitemap.xml"/>
+  <link rel="sitemap" type="application/xml" title="sitemap" href="https://growtechagro.com.ng/sitemap.xml" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="icon" type="image/jpg" href="images/logo.jpg/>
+  <link rel="icon" type="image/jpg" href="images/logo.jpg" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <style>
     /* ===================== CSS VARIABLES ===================== */
@@ -202,7 +211,6 @@
     .gallery-item:hover .gallery-caption { transform: none; }
     .gallery-caption h4 { font-family: 'Playfair Display', serif; color: var(--white); font-size: 1rem; margin-bottom: .2rem; }
     .gallery-caption p { color: rgba(255,255,255,.72); font-size: .78rem; }
-    /* Lightbox */
     .lightbox { display: none; position: fixed; inset: 0; background: rgba(0,0,0,.9); z-index: 9999; place-items: center; }
     .lightbox.active { display: grid; }
     .lightbox img { max-width: 90vw; max-height: 85vh; object-fit: contain; border-radius: var(--radius); }
@@ -304,11 +312,7 @@
     .btn-loading::after { content:''; display:inline-block; width:14px; height:14px; border:2px solid rgba(255,255,255,.4); border-top-color:white; border-radius:50%; animation:spin2 .7s linear infinite; margin-left:.5rem; }
     @keyframes spin2 { to { transform: rotate(360deg); } }
 
-    /* ============================================================
-       RESPONSIVE BREAKPOINTS — FULLY FIXED
-    ============================================================ */
-
-    /* ── TABLET LARGE: ≤ 1100px ── */
+    /* ===================== RESPONSIVE ===================== */
     @media (max-width: 1100px) {
       .nav-links { gap: 1.1rem; }
       .nav-links a { font-size: .8rem; }
@@ -316,107 +320,53 @@
       .prod-card.featured { grid-row: span 1; min-height: 240px; }
       .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
     }
-
-    /* ── TABLET: ≤ 900px ── */
     @media (max-width: 900px) {
-      /* Hide desktop nav, show hamburger */
       .nav-links, .nav-cta { display: none !important; }
       .hamburger { display: flex; }
-
-      /* About: stack */
       .about-grid { grid-template-columns: 1fr; gap: 3rem; }
       .about-badge-float { position: static; display: inline-block; margin-top: 1rem; }
-
-      /* Gallery: 2 columns */
-      .gallery-grid {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 200px 200px 200px;
-      }
+      .gallery-grid { grid-template-columns: 1fr 1fr; grid-template-rows: 200px 200px 200px; }
       .gallery-item.wide { grid-column: span 2; }
-
-      /* Products: 2 columns */
       .products-grid { grid-template-columns: 1fr 1fr; }
       .prod-card.featured { grid-row: span 1; min-height: 200px; }
-
-      /* Contact: stack */
       .contact-grid { grid-template-columns: 1fr; gap: 2.5rem; }
-
-      /* Footer: 2-col */
       .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
     }
-
-    /* ── TABLET SMALL / LARGE PHONE: ≤ 640px ── */
     @media (max-width: 640px) {
-      /* Hero */
       .hero-shape-1, .hero-shape-2 { display: none; }
       .hero-actions { flex-direction: column; }
       .hero-actions .btn { width: 100%; }
       .hero-stats { gap: 1.2rem; }
-
-      /* Services: 1 column */
       .services-grid { grid-template-columns: 1fr; }
-
-      /* Why: 2 columns on mid phones, 1 col later */
       .why-grid { grid-template-columns: 1fr 1fr; }
-
-      /* Testimonials: 1 column */
       .testimonials-track { grid-template-columns: 1fr; }
-
-      /* Gallery: 1 column */
-      .gallery-grid {
-        grid-template-columns: 1fr;
-        grid-template-rows: none;
-      }
-      .gallery-item,
-      .gallery-item.wide { grid-column: span 1; height: 200px; }
-
-      /* Products: 1 column */
+      .gallery-grid { grid-template-columns: 1fr; grid-template-rows: none; }
+      .gallery-item, .gallery-item.wide { grid-column: span 1; height: 200px; }
       .products-grid { grid-template-columns: 1fr; }
-
-      /* CTA strip */
       .cta-strip-actions { flex-direction: column; align-items: center; }
       .cta-strip-actions .btn { width: 100%; max-width: 300px; }
-
-      /* Contact form */
       .form-row { grid-template-columns: 1fr; }
       .contact-form { padding: 1.6rem; }
-
-      /* Footer: 1 column */
       .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
       .footer-bottom { flex-direction: column; text-align: center; }
       .footer-brand p { max-width: 100%; }
-
-      /* Partners: wrap smaller */
       .partners-row { gap: 1.2rem 1rem; }
       .partner-item { flex: 0 1 80px; }
       .partner-initials { width: 58px; height: 58px; }
     }
-
-    /* ── PHONE: ≤ 480px ── */
     @media (max-width: 480px) {
-      /* Logo: abbreviate */
       .logo-text strong { font-size: .78rem; }
       .logo-text span { font-size: .55rem; letter-spacing: .06em; }
       .logo-icon { width: 38px; height: 38px; min-width: 38px; }
-
-      /* Why: 1 column */
       .why-grid { grid-template-columns: 1fr; }
-
-      /* Hero stats: 2 per row */
       .hero-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
-
-      /* Section padding reduce */
       .about, .services, .why, .testimonials, .gallery, .products, .contact { padding: 60px 0; }
       .cta-strip { padding: 50px 0; }
-
-      /* Partners tighter */
       .partners-row { gap: 1rem .8rem; }
       .partner-item { flex: 0 1 70px; }
       .partner-initials { width: 52px; height: 52px; }
       .partner-item span { font-size: .62rem; }
     }
-
-    /* ── VERY SMALL PHONE: ≤ 360px ── */
     @media (max-width: 360px) {
       .logo-text strong { font-size: .72rem; }
       .container { width: 95%; }
@@ -988,7 +938,7 @@
   <button class="back-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
 
   <script>
-    /* ── HAMBURGER ── */
+    /* HAMBURGER */
     const hamburger = document.getElementById('hamburger');
     const mobileMenu = document.getElementById('mobile-menu');
     hamburger.addEventListener('click', () => {
@@ -1001,17 +951,16 @@
       mobileMenu.classList.remove('open');
       hamburger.setAttribute('aria-expanded', 'false');
     }
-    /* Close mobile menu when clicking outside */
     document.addEventListener('click', e => {
       if (mobileMenu.classList.contains('open') && !mobileMenu.contains(e.target) && !hamburger.contains(e.target)) {
         closeMenu();
       }
     });
 
-    /* ── SCROLL EFFECTS ── */
-    const header   = document.getElementById('site-header');
-    const backTop  = document.getElementById('backTop');
-    const progBar  = document.getElementById('progress-bar');
+    /* SCROLL EFFECTS */
+    const header  = document.getElementById('site-header');
+    const backTop = document.getElementById('backTop');
+    const progBar = document.getElementById('progress-bar');
     window.addEventListener('scroll', () => {
       const scrolled = window.scrollY;
       header.classList.toggle('scrolled', scrolled > 50);
@@ -1020,14 +969,14 @@
       progBar.style.width = docH > 0 ? (scrolled / docH * 100) + '%' : '0%';
     }, { passive: true });
 
-    /* ── SCROLL REVEAL ── */
+    /* SCROLL REVEAL */
     const reveals = document.querySelectorAll('.reveal');
     const revealObs = new IntersectionObserver(entries => {
       entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); revealObs.unobserve(e.target); } });
     }, { threshold: 0.1 });
     reveals.forEach(el => revealObs.observe(el));
 
-    /* ── ANIMATED COUNTERS ── */
+    /* ANIMATED COUNTERS */
     document.querySelectorAll('.counter').forEach(el => {
       new IntersectionObserver(([entry], obs) => {
         if (!entry.isIntersecting) return;
@@ -1043,7 +992,7 @@
       }, { threshold: 0.5 }).observe(el);
     });
 
-    /* ── LIGHTBOX ── */
+    /* LIGHTBOX */
     const galleryImages = [
       { src:'Large-Scale Crop Production.jpg', alt:'Large-Scale Crop Production' },
       { src:'Harvest Support.jpg',             alt:'Harvest Support' },
@@ -1052,7 +1001,7 @@
       { src:'Mechanised Farming.jpg',          alt:'Mechanised Farming' },
     ];
     let lbIdx = 0;
-    const lightbox   = document.getElementById('lightbox');
+    const lightbox    = document.getElementById('lightbox');
     const lightboxImg = document.getElementById('lightbox-img');
     function openLightbox(idx) { lbIdx = idx; lightboxImg.src = galleryImages[idx].src; lightboxImg.alt = galleryImages[idx].alt; lightbox.classList.add('active'); document.body.style.overflow = 'hidden'; }
     function closeLightbox() { lightbox.classList.remove('active'); document.body.style.overflow = ''; }
@@ -1068,7 +1017,7 @@
       item.addEventListener('keypress', e => { if (e.key === 'Enter' || e.key === ' ') openLightbox(idx); });
     });
 
-    /* ── CONTACT FORM ── */
+    /* CONTACT FORM */
     function validateForm() {
       let valid = true;
       [['first-name','err-fname'],['last-name','err-lname'],['email','err-email'],['message','err-message']].forEach(([id, errId]) => {
@@ -1089,12 +1038,12 @@
       const firstName = document.getElementById('first-name').value.trim();
       const service   = document.getElementById('service').value || 'General Inquiry';
       const message   = document.getElementById('message').value.trim();
-      const aiBox = document.getElementById('ai-response');
+      const aiBox  = document.getElementById('ai-response');
       const typing = document.getElementById('typing');
       const aiText = document.getElementById('ai-text');
       aiBox.classList.add('visible'); typing.style.display = 'flex'; aiText.style.display = 'none';
       try {
-        const res  = await fetch('https://api.anthropic.com/v1/messages', {
+        const res = await fetch('https://api.anthropic.com/v1/messages', {
           method: 'POST', headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
             model: 'claude-sonnet-4-20250514', max_tokens: 1000,
@@ -1122,8 +1071,6 @@
       ['first-name','last-name','email','phone','service','message'].forEach(id => document.getElementById(id).value = '');
       document.getElementById('submit-btn').textContent = 'Send Message ✉️';
     }
-  
-</script>
   </script>
 </body>
 </html>
