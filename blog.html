@@ -30,19 +30,17 @@
     ul { list-style: none; }
     .container { width: min(1200px, 92%); margin-inline: auto; }
     .section-label { font-size:.72rem; font-weight:600; letter-spacing:.18em; text-transform:uppercase; color:var(--gold); }
-    .section-title { font-family:'Playfair Display',serif; font-size:clamp(2rem,4vw,3rem); color:var(--green-deep); line-height:1.15; }
     .btn { display:inline-flex; align-items:center; gap:.5rem; padding:.8rem 1.8rem; border-radius:50px; font-weight:600; font-size:.9rem; cursor:pointer; transition:transform .2s,box-shadow .2s; border:none; }
     .btn:hover { transform:translateY(-2px); box-shadow:0 6px 24px rgba(0,0,0,.15); }
     .btn-primary { background:var(--green-light); color:var(--white); }
     .btn-outline-green { background:transparent; color:var(--green-mid); border:2px solid var(--green-mid); }
-    .btn-outline { background:transparent; color:var(--white); border:2px solid rgba(255,255,255,.5); }
-    .btn-outline:hover { background:var(--white); color:var(--green-deep); }
 
     /* HEADER */
     header { position:fixed; top:0; left:0; width:100%; z-index:900; background:rgba(13,59,30,.95); backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); border-bottom:1px solid rgba(255,255,255,.08); }
     nav { display:flex; align-items:center; justify-content:space-between; height:70px; }
     .logo { display:flex; align-items:center; gap:.75rem; }
-    .logo-icon { width:55px; height:55px; background:var(--green-light); border-radius:10px; display:grid; place-items:center; font-size:1.4rem; flex-shrink:0; }
+    .logo-icon { width:50px; height:50px; border-radius:10px; overflow:hidden; flex-shrink:0; background:#fff; display:flex; align-items:center; justify-content:center; }
+    .logo-icon img { width:100%; height:100%; object-fit:contain; }
     .logo-text strong { font-family:'Playfair Display',serif; font-size:1.05rem; color:var(--white); line-height:1.1; display:block; }
     .logo-text span { font-size:.65rem; color:var(--gold-light); letter-spacing:.1em; text-transform:uppercase; }
     .nav-links { display:flex; align-items:center; gap:2rem; }
@@ -58,76 +56,38 @@
     .mobile-menu.open { display:flex; }
 
     /* BLOG HERO */
-    .blog-hero {
-      padding: 140px 0 80px;
-      background: linear-gradient(160deg, var(--green-deep) 0%, var(--green-mid) 70%, rgba(200,155,42,.3) 100%);
-      position: relative; overflow: hidden;
-    }
-    .blog-hero::before {
-      content:'';
-      position:absolute; top:-100px; right:-100px;
-      width:500px; height:500px; border-radius:50%;
-      background:radial-gradient(circle, rgba(46,168,79,.18) 0%, transparent 70%);
-    }
+    .blog-hero { padding:140px 0 80px; background:linear-gradient(160deg,var(--green-deep) 0%,var(--green-mid) 70%,rgba(200,155,42,.3) 100%); position:relative; overflow:hidden; }
+    .blog-hero::before { content:''; position:absolute; top:-100px; right:-100px; width:500px; height:500px; border-radius:50%; background:radial-gradient(circle,rgba(46,168,79,.18) 0%,transparent 70%); }
     .blog-hero-content { position:relative; z-index:1; text-align:center; }
     .blog-hero .section-label { color:var(--gold-light); margin-bottom:.8rem; }
     .blog-hero h1 { font-family:'Playfair Display',serif; font-size:clamp(2.4rem,5vw,3.8rem); color:var(--white); margin-bottom:1.2rem; }
     .blog-hero p { color:rgba(255,255,255,.75); font-size:1.05rem; max-width:520px; margin:0 auto 2rem; line-height:1.7; }
-
-    .search-bar {
-      display:flex; max-width:480px; margin:0 auto;
-      background:rgba(255,255,255,.12);
-      border:1px solid rgba(255,255,255,.25);
-      border-radius:50px;
-      overflow:hidden;
-      backdrop-filter:blur(8px);
-    }
-    .search-bar input {
-      flex:1; padding:.9rem 1.4rem; background:transparent;
-      border:none; outline:none; color:var(--white); font-family:'DM Sans',sans-serif; font-size:.95rem;
-    }
+    .search-bar { display:flex; max-width:480px; margin:0 auto; background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.25); border-radius:50px; overflow:hidden; backdrop-filter:blur(8px); }
+    .search-bar input { flex:1; padding:.9rem 1.4rem; background:transparent; border:none; outline:none; color:var(--white); font-family:'DM Sans',sans-serif; font-size:.95rem; }
     .search-bar input::placeholder { color:rgba(255,255,255,.5); }
-    .search-bar button {
-      padding:.9rem 1.4rem; background:var(--gold); border:none; cursor:pointer;
-      color:var(--white); font-size:1rem; transition:background .2s;
-    }
+    .search-bar button { padding:.9rem 1.4rem; background:var(--gold); border:none; cursor:pointer; color:var(--white); font-size:1rem; transition:background .2s; }
     .search-bar button:hover { background:var(--gold-light); }
 
     /* CATEGORIES */
     .categories { padding:40px 0 0; }
     .cat-scroll { display:flex; gap:.75rem; overflow-x:auto; padding-bottom:1rem; -webkit-overflow-scrolling:touch; }
     .cat-scroll::-webkit-scrollbar { height:4px; }
-    .cat-scroll::-webkit-scrollbar-track { background:rgba(13,59,30,.06); border-radius:2px; }
     .cat-scroll::-webkit-scrollbar-thumb { background:var(--green-light); border-radius:2px; }
-    .cat-btn {
-      flex-shrink:0; padding:.5rem 1.3rem; border-radius:50px; font-size:.82rem; font-weight:600;
-      cursor:pointer; border:2px solid transparent; transition:all .2s; white-space:nowrap;
-      background:var(--white); color:var(--text-mid); border-color:#e0e8e2;
-    }
+    .cat-btn { flex-shrink:0; padding:.5rem 1.3rem; border-radius:50px; font-size:.82rem; font-weight:600; cursor:pointer; border:2px solid #e0e8e2; transition:all .2s; white-space:nowrap; background:var(--white); color:var(--text-mid); }
     .cat-btn:hover, .cat-btn.active { background:var(--green-mid); color:var(--white); border-color:var(--green-mid); }
 
     /* BLOG GRID */
     .blog-main { padding:50px 0 100px; }
     .blog-layout { display:grid; grid-template-columns:1fr 320px; gap:3rem; align-items:start; }
 
-    .featured-post {
-      background:var(--white); border-radius:20px; overflow:hidden;
-      box-shadow:var(--shadow); margin-bottom:2rem;
-      transition:transform .3s;
-    }
+    /* Featured post */
+    .featured-post { background:var(--white); border-radius:20px; overflow:hidden; box-shadow:var(--shadow); margin-bottom:2rem; transition:transform .3s; }
     .featured-post:hover { transform:translateY(-4px); }
-    .featured-img {
-      height:280px; background:linear-gradient(135deg, var(--green-deep), var(--green-mid));
-      display:flex; align-items:center; justify-content:center;
-      font-size:4rem; position:relative; overflow:hidden;
-    }
-    .featured-img::after {
-      content:'FEATURED';
-      position:absolute; top:1rem; left:1rem;
-      background:var(--gold); color:var(--white);
-      font-size:.65rem; font-weight:700; letter-spacing:.15em;
-      padding:.35rem .9rem; border-radius:50px;
-    }
+    .featured-img { height:300px; position:relative; overflow:hidden; }
+    .featured-img img { width:100%; height:100%; object-fit:cover; display:block; transition:transform .4s; }
+    .featured-post:hover .featured-img img { transform:scale(1.04); }
+    .featured-img .feat-overlay { position:absolute; inset:0; background:linear-gradient(to top, rgba(13,59,30,.45) 0%, transparent 60%); }
+    .featured-img::after { content:'FEATURED'; position:absolute; top:1rem; left:1rem; background:var(--gold); color:var(--white); font-size:.65rem; font-weight:700; letter-spacing:.15em; padding:.35rem .9rem; border-radius:50px; }
     .featured-body { padding:2rem; }
     .post-meta { display:flex; align-items:center; gap:1rem; margin-bottom:.9rem; flex-wrap:wrap; }
     .post-cat { background:rgba(46,168,79,.1); color:var(--green-mid); font-size:.72rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase; padding:.3rem .85rem; border-radius:50px; }
@@ -136,27 +96,22 @@
     .featured-body h2 { font-family:'Playfair Display',serif; font-size:clamp(1.4rem,2.5vw,1.9rem); color:var(--green-deep); margin-bottom:.8rem; line-height:1.25; }
     .featured-body p { color:var(--text-mid); line-height:1.75; margin-bottom:1.4rem; font-size:.95rem; }
     .post-author { display:flex; align-items:center; gap:.75rem; }
-    .author-avatar { width:38px; height:38px; border-radius:50%; background:linear-gradient(135deg, var(--green-mid), var(--green-light)); display:grid; place-items:center; font-size:1rem; flex-shrink:0; }
-    .author-name { font-size:.82rem; font-weight:600; color:var(--text-dark); }
+    .author-avatar { width:38px; height:38px; border-radius:50%; background:linear-gradient(135deg,var(--green-mid),var(--green-light)); display:grid; place-items:center; font-size:1rem; flex-shrink:0; }
     .author-role { font-size:.72rem; color:var(--text-light); }
 
+    /* Post grid */
     .posts-grid { display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; }
     .post-card { background:var(--white); border-radius:var(--radius); overflow:hidden; box-shadow:0 2px 16px rgba(13,59,30,.07); transition:transform .3s,box-shadow .3s; cursor:pointer; }
     .post-card:hover { transform:translateY(-5px); box-shadow:var(--shadow); }
-    .post-card-img { height:160px; display:flex; align-items:center; justify-content:center; font-size:2.8rem; position:relative; }
-    .pc1 { background:linear-gradient(135deg,#0d3b1e,#1a6b38); }
-    .pc2 { background:linear-gradient(135deg,#1a6b38,#2ea84f); }
-    .pc3 { background:linear-gradient(135deg,#c89b2a,#f0c84a); }
-    .pc4 { background:linear-gradient(135deg,#2ea84f,#0d3b1e); }
-    .pc5 { background:linear-gradient(135deg,#0d3b1e,#c89b2a); }
-    .pc6 { background:linear-gradient(135deg,#1a6b38,#c89b2a); }
+    .post-card-img { height:180px; overflow:hidden; position:relative; }
+    .post-card-img img { width:100%; height:100%; object-fit:cover; display:block; transition:transform .4s; }
+    .post-card:hover .post-card-img img { transform:scale(1.06); }
     .post-card-body { padding:1.3rem; }
     .post-card-body .post-meta { margin-bottom:.65rem; }
     .post-card-body h3 { font-family:'Playfair Display',serif; font-size:1.05rem; color:var(--green-deep); margin-bottom:.55rem; line-height:1.3; }
     .post-card-body p { font-size:.84rem; color:var(--text-light); line-height:1.65; margin-bottom:1rem; }
     .read-more { font-size:.82rem; font-weight:600; color:var(--green-mid); display:flex; align-items:center; gap:.35rem; transition:gap .2s; }
     .post-card:hover .read-more { gap:.6rem; }
-
     .load-more-wrap { text-align:center; margin-top:2.5rem; }
 
     /* SIDEBAR */
@@ -171,7 +126,7 @@
     .tags-cloud { display:flex; flex-wrap:wrap; gap:.5rem; }
     .tag { background:var(--cream); color:var(--text-mid); font-size:.75rem; font-weight:600; padding:.35rem .85rem; border-radius:50px; cursor:pointer; border:1px solid #e0e8e2; transition:all .2s; }
     .tag:hover { background:var(--green-light); color:var(--white); border-color:var(--green-light); }
-    .newsletter-widget { background:linear-gradient(135deg, var(--green-deep), var(--green-mid)); }
+    .newsletter-widget { background:linear-gradient(135deg,var(--green-deep),var(--green-mid)); }
     .newsletter-widget .widget-title { color:var(--white); border-color:rgba(255,255,255,.15); }
     .newsletter-widget p { font-size:.85rem; color:rgba(255,255,255,.72); margin-bottom:1.2rem; line-height:1.6; }
     .nl-input { width:100%; padding:.8rem 1rem; border-radius:8px; border:none; outline:none; font-family:'DM Sans',sans-serif; font-size:.9rem; margin-bottom:.75rem; }
@@ -182,31 +137,24 @@
     .reveal { opacity:0; transform:translateY(22px); transition:opacity .7s,transform .7s; }
     .reveal.visible { opacity:1; transform:none; }
     .reveal-delay-1 { transition-delay:.1s; }
-    .reveal-delay-2 { transition-delay:.2s; }
 
     /* RESPONSIVE */
-    @media(max-width:960px) {
-      .blog-layout { grid-template-columns:1fr; }
-      .sidebar { position:static; }
-    }
-    @media(max-width:640px) {
-      .posts-grid { grid-template-columns:1fr; }
-      .nav-links,.nav-cta { display:none; }
-      .hamburger { display:flex; }
-    }
-    @media(max-width:480px) {
-      .featured-img { height:200px; }
-    }
+    @media(max-width:960px) { .blog-layout { grid-template-columns:1fr; } .sidebar { position:static; } }
+    @media(max-width:640px) { .posts-grid { grid-template-columns:1fr; } .nav-links { display:none; } .hamburger { display:flex; } }
+    @media(max-width:480px) { .featured-img { height:220px; } }
 
+    /* BACK TO TOP */
     .back-top { position:fixed; bottom:1.5rem; right:1.5rem; z-index:800; width:46px; height:46px; background:var(--green-light); border:none; border-radius:50%; color:var(--white); font-size:1.2rem; cursor:pointer; box-shadow:0 4px 20px rgba(46,168,79,.4); display:grid; place-items:center; transition:opacity .3s,transform .3s; opacity:0; pointer-events:none; }
     .back-top.visible { opacity:1; pointer-events:auto; }
     .back-top:hover { transform:translateY(-3px); }
 
     /* FOOTER */
-    footer { background:var(--green-deep); color:rgba(255,255,255,.75); padding:60px 0 28px; }
-    .footer-bottom { border-top:1px solid rgba(255,255,255,.08); padding-top:1.5rem; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; font-size:.82rem; }
-    .footer-bottom span { color:rgba(255,255,255,.4); }
-    .footer-bottom strong { color:var(--gold-light); }
+    footer { background:var(--green-deep); color:rgba(255,255,255,.75); padding:40px 0 24px; }
+    .footer-inner { display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:1.5rem; }
+    .footer-links { display:flex; gap:1.5rem; flex-wrap:wrap; font-size:.88rem; }
+    .footer-links a { color:rgba(255,255,255,.65); transition:color .2s; }
+    .footer-links a:hover { color:var(--gold-light); }
+    .footer-copy { font-size:.8rem; color:rgba(255,255,255,.35); }
   </style>
 </head>
 <body>
@@ -215,8 +163,9 @@
 <header>
   <nav class="container">
     <a href="#" class="logo">
-      <div class="logo-icon" style="background:white;padding:2px;">
-        <span style="font-size:1.6rem;">🌱</span>
+      <div class="logo-icon">
+        <!-- REPLACE src WITH YOUR LOGO PATH e.g. src="logo.jpg" -->
+        <img src="logo.jpg" alt="Grow Tech Agro Nig. Ltd Logo" />
       </div>
       <div class="logo-text">
         <strong>Grow Tech Agro Nig. Ltd</strong>
@@ -276,11 +225,18 @@
 <section class="blog-main">
   <div class="container">
     <div class="blog-layout">
-      <!-- POSTS -->
       <div>
-        <!-- Featured -->
+
+        <!-- FEATURED POST -->
         <div class="featured-post reveal">
-          <div class="featured-img">🌾</div>
+          <div class="featured-img">
+            <img
+              src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=900&q=80&fit=crop"
+              alt="Maize farm in Nigeria"
+              onerror="this.style.background='linear-gradient(135deg,#0d3b1e,#1a6b38)';this.style.display='none'"
+            />
+            <div class="feat-overlay"></div>
+          </div>
           <div class="featured-body">
             <div class="post-meta">
               <span class="post-cat">Crop Production</span>
@@ -288,23 +244,28 @@
               <span class="post-read">⏱ 6 min read</span>
             </div>
             <h2>Maximising Maize Yields in Northern Nigeria: A Practical Guide for 2025</h2>
-            <p>With rising food demand and changing climate patterns, Nigerian maize farmers need smarter strategies. In this comprehensive guide, our agronomists share proven techniques — from soil preparation and seed selection to fertilizer scheduling and pest management — that can increase your yield by up to 40%.</p>
+            <p>With rising food demand and changing climate patterns, Nigerian maize farmers need smarter strategies. Our agronomists share proven techniques — from soil preparation and seed selection to fertilizer scheduling and pest management — that can increase your yield by up to 40%.</p>
             <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;">
               <div class="post-author">
                 <div class="author-avatar">👨‍🌾</div>
-                <div>
-                  <div class="author-role">Head Agronomist, Agro Tech Nigeria</div>
-                </div>
+                <div><div class="author-role">Head Agronomist, Grow Tech Nigeria</div></div>
               </div>
               <a href="#" class="btn btn-primary" style="font-size:.85rem;padding:.65rem 1.4rem;">Read Full Article →</a>
             </div>
           </div>
         </div>
 
-        <!-- Posts Grid -->
+        <!-- POSTS GRID -->
         <div class="posts-grid">
+
+          <!-- Post 1: Herbicide Resistance -->
           <div class="post-card reveal">
-            <div class="post-card-img pc2">🧪</div>
+            <div class="post-card-img">
+              <img
+                src="https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?w=600&q=80&fit=crop"
+                alt="Herbicide spraying on farm"
+              />
+            </div>
             <div class="post-card-body">
               <div class="post-meta">
                 <span class="post-cat">Agro Chemicals</span>
@@ -315,8 +276,15 @@
               <div class="read-more">Read Article →</div>
             </div>
           </div>
+
+          <!-- Post 2: Fertilizers -->
           <div class="post-card reveal reveal-delay-1">
-            <div class="post-card-img pc3">🪣</div>
+            <div class="post-card-img">
+              <img
+                src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600&q=80&fit=crop"
+                alt="Fertilizer on crops"
+              />
+            </div>
             <div class="post-card-body">
               <div class="post-meta">
                 <span class="post-cat">Fertilizers</span>
@@ -327,8 +295,15 @@
               <div class="read-more">Read Article →</div>
             </div>
           </div>
+
+          <!-- Post 3: Tractor -->
           <div class="post-card reveal">
-            <div class="post-card-img pc4">🚜</div>
+            <div class="post-card-img">
+              <img
+                src="https://images.unsplash.com/photo-1592982537447-7440770cbfc9?w=600&q=80&fit=crop"
+                alt="Tractor on farm"
+              />
+            </div>
             <div class="post-card-body">
               <div class="post-meta">
                 <span class="post-cat">Farm Machinery</span>
@@ -339,8 +314,15 @@
               <div class="read-more">Read Article →</div>
             </div>
           </div>
+
+          <!-- Post 4: Market Trends -->
           <div class="post-card reveal reveal-delay-1">
-            <div class="post-card-img pc5">📈</div>
+            <div class="post-card-img">
+              <img
+                src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=600&q=80&fit=crop"
+                alt="Agricultural market and produce"
+              />
+            </div>
             <div class="post-card-body">
               <div class="post-meta">
                 <span class="post-cat">Market Trends</span>
@@ -351,8 +333,15 @@
               <div class="read-more">Read Article →</div>
             </div>
           </div>
+
+          <!-- Post 5: Irrigation -->
           <div class="post-card reveal">
-            <div class="post-card-img pc1">💧</div>
+            <div class="post-card-img">
+              <img
+                src="https://images.unsplash.com/photo-1500651230702-0e2d8a49d4ad?w=600&q=80&fit=crop"
+                alt="Drip irrigation on farm"
+              />
+            </div>
             <div class="post-card-body">
               <div class="post-meta">
                 <span class="post-cat">Tips & Guides</span>
@@ -363,8 +352,15 @@
               <div class="read-more">Read Article →</div>
             </div>
           </div>
+
+          <!-- Post 6: Success Story -->
           <div class="post-card reveal reveal-delay-1">
-            <div class="post-card-img pc6">🏆</div>
+            <div class="post-card-img">
+              <img
+                src="https://images.unsplash.com/photo-1605000797499-95a51c5269ae?w=600&q=80&fit=crop"
+                alt="Successful African farmer in field"
+              />
+            </div>
             <div class="post-card-body">
               <div class="post-meta">
                 <span class="post-cat">Success Stories</span>
@@ -375,6 +371,7 @@
               <div class="read-more">Read Article →</div>
             </div>
           </div>
+
         </div>
 
         <div class="load-more-wrap reveal" style="margin-top:2.5rem;">
@@ -439,23 +436,24 @@
 
 <!-- FOOTER -->
 <footer>
-  <div class="container" style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1.5rem;">
-    <div class="logo">
-      <div class="logo-icon" style="background:white;padding:2px;">
-        <span style="font-size:1.4rem;">🌱</span>
+  <div class="container footer-inner">
+    <a href="#" class="logo">
+      <div class="logo-icon">
+        <!-- REPLACE src WITH YOUR LOGO PATH e.g. src="logojpg" -->
+        <img src="logo.jpg" alt="Grow Tech Agro Nig. Ltd Logo" />
       </div>
       <div class="logo-text">
         <strong>Grow Tech Agro Nig. Ltd</strong>
         <span>An Agro Alliance Company</span>
       </div>
+    </a>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="company-profile.html">Company</a>
+      <a href="blog.html">Blog</a>
+      <a href="index.html#contact">Contact</a>
     </div>
-    <div style="display:flex;gap:1.5rem;flex-wrap:wrap;font-size:.88rem;">
-      <a href="index.html" style="color:rgba(255,255,255,.65);transition:color .2s;" onmouseover="this.style.color='#f0c84a'" onmouseout="this.style.color='rgba(255,255,255,.65)'">Home</a>
-      <a href="company-profile.html" style="color:rgba(255,255,255,.65);transition:color .2s;" onmouseover="this.style.color='#f0c84a'" onmouseout="this.style.color='rgba(255,255,255,.65)'">Company</a>
-      <a href="blog.html" style="color:rgba(255,255,255,.65);transition:color .2s;" onmouseover="this.style.color='#f0c84a'" onmouseout="this.style.color='rgba(255,255,255,.65)'">Blog</a>
-      <a href="index.html#contact" style="color:rgba(255,255,255,.65);transition:color .2s;" onmouseover="this.style.color='#f0c84a'" onmouseout="this.style.color='rgba(255,255,255,.65)'">Contact</a>
-    </div>
-    <span style="font-size:.8rem;color:rgba(255,255,255,.35);">© 2026 Grow Tech Agro Nig. Ltd. All rights reserved.</span>
+    <span class="footer-copy">© 2026 Grow Tech Agro Nig. Ltd. All rights reserved.</span>
   </div>
 </footer>
 
@@ -473,8 +471,8 @@
   });
   const reveals = document.querySelectorAll('.reveal');
   const observer = new IntersectionObserver(entries => entries.forEach(e => {
-    if(e.isIntersecting){ e.target.classList.add('visible'); observer.unobserve(e.target); }
-  }), {threshold:.1});
+    if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
+  }), { threshold: .1 });
   reveals.forEach(el => observer.observe(el));
   document.querySelectorAll('.cat-btn').forEach(btn => btn.addEventListener('click', () => {
     document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
