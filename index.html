@@ -1,0 +1,3731 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Grow Tech Agro Nig. Ltd – An Agro Alliance Company specialising in crop production, agro chemicals, fertilizers, agricultural machinery, and mining & mineral resources across Nigeria." />
+  <meta name="keywords"
+    content="agriculture Nigeria, agro chemicals, fertilizers, farm machinery, crop production, mining Nigeria, mineral resources, Abuja agro, Grow Tech, farming solutions,Growtech Agro,Agribusiness,Agro services" />
+  <meta name="author" content="Growtech Agro">
+  <meta property="og:title" content="Grow Tech Agro Nig. Ltd" />
+  <meta property="og:description"
+    content="Delivering quality agricultural inputs and services to empower Nigerian farmers and agribusinesses." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://growtechagro.com.ng/">
+  <meta name="theme-color" content="#0d3b1e" />
+  <meta name="google-site-verification" content="vsXBuz-w0NrH_RKLnOiJF_4071R-tnXgig-h-1f1tJ4" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Growtech Agro Nig.Ltd",
+    "url": "https://growtechagro.com.ng",
+    "logo": "https://growtechagro.com.ng/favicon.png"
+  }
+  </script>
+  <title>Grow Tech Agro Nig. Ltd | An Agro Alliance Company</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="sitemap" type="application/xml" title="sitemap" href="https://growtechagro.com.ng/sitemap.xml" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <style>
+    /* ===================== CSS VARIABLES ===================== */
+    :root {
+      --green-deep: #0d3b1e;
+      --green-mid: #1a6b38;
+      --green-light: #2ea84f;
+      --gold: #c89b2a;
+      --gold-light: #f0c84a;
+      --cream: #f7f3eb;
+      --white: #ffffff;
+      --text-dark: #0d1a10;
+      --text-mid: #3a4d3d;
+      --text-light: #6b7f6e;
+      --radius: 12px;
+      --shadow: 0 8px 40px rgba(13, 59, 30, 0.13);
+      --transition: 0.3s ease;
+    }
+
+    /* ===================== RESET & BASE ===================== */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: linear-gradient(165deg, #f4efe6 0%, #ebe3d4 30%, #f7f3eb 60%, #e8e0d0 100%);
+      color: var(--text-dark);
+      overflow-x: hidden;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    .container {
+      width: min(1200px, 92%);
+      margin-inline: auto;
+    }
+
+    .section-label {
+      font-size: .82rem;
+      font-weight: 700;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      display: block;
+    }
+
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.1rem, 4.5vw, 3.4rem);
+      font-weight: 900;
+      color: var(--green-deep);
+      line-height: 1.15;
+    }
+
+    /* ===================== BUTTONS ===================== */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: .5rem;
+      padding: .85rem 2rem;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: .95rem;
+      cursor: pointer;
+      transition: transform .2s, box-shadow .2s, background .2s;
+      border: none;
+      font-family: 'DM Sans', sans-serif;
+      text-align: center;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 24px rgba(0, 0, 0, .18);
+    }
+
+    .btn:focus-visible {
+      outline: 3px solid var(--gold-light);
+      outline-offset: 3px;
+    }
+
+    .btn-primary {
+      background: var(--green-light);
+      color: var(--white);
+    }
+
+    .btn-gold {
+      background: var(--gold);
+      color: var(--white);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--white);
+      border: 2px solid var(--white);
+    }
+
+    .btn-outline:hover {
+      background: var(--white);
+      color: var(--green-deep);
+    }
+
+    .btn-dark {
+      background: var(--green-deep);
+      color: var(--white);
+    }
+
+    /* ===================== SKIP LINK ===================== */
+    .skip-link {
+      position: absolute;
+      left: -9999px;
+      top: 1rem;
+      background: var(--gold);
+      color: var(--white);
+      padding: .5rem 1rem;
+      border-radius: 4px;
+      z-index: 9999;
+      font-weight: 600;
+    }
+
+    .skip-link:focus {
+      left: 1rem;
+    }
+
+    /* ===================== PROGRESS BAR ===================== */
+    #progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 3px;
+      background: var(--gold-light);
+      z-index: 9999;
+      width: 0%;
+      transition: width .1s;
+    }
+
+    /* ===================== HEADER ===================== */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 900;
+      background: linear-gradient(180deg, rgba(8, 30, 15, .97) 0%, rgba(13, 59, 30, .95) 100%);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(255, 255, 255, .1);
+      transition: background var(--transition), box-shadow var(--transition);
+    }
+
+    header.scrolled {
+      background: linear-gradient(180deg, rgba(6, 26, 14, 1) 0%, rgba(13, 59, 30, 1) 100%);
+      box-shadow: 0 4px 24px rgba(0, 0, 0, .4);
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 70px;
+      gap: 1rem;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: .75rem;
+    }
+
+    .logo-icon {
+      width: 55px;
+      height: 55px;
+      background: var(--green-light);
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      font-size: 1.4rem;
+      flex-shrink: 0;
+    }
+
+    .logo-icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .logo-text strong {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.35rem;
+      font-weight: 900;
+      color: var(--white);
+      line-height: 1.1;
+      display: block;
+    }
+
+    .logo-text span {
+      font-size: .78rem;
+      font-weight: 600;
+      opacity: 0.9;
+      color: var(--gold-light);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      flex-wrap: nowrap;
+    }
+
+    .nav-links a {
+      color: rgba(255, 255, 255, .82);
+      font-size: .85rem;
+      font-weight: 500;
+      transition: color .2s;
+      position: relative;
+      white-space: nowrap;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--gold-light);
+      transition: width .3s;
+    }
+
+    .nav-links a:hover,
+    .nav-links a[aria-current="page"] {
+      color: var(--white);
+    }
+
+    .nav-links a:hover::after,
+    .nav-links a[aria-current="page"]::after {
+      width: 100%;
+    }
+
+    .nav-cta {
+      margin-left: .5rem;
+      white-space: nowrap;
+      flex-shrink: 0;
+      padding: .7rem 1.3rem;
+      font-size: .85rem;
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: .4rem;
+      flex-shrink: 0;
+    }
+
+    .hamburger span {
+      display: block;
+      width: 26px;
+      height: 2px;
+      background: var(--white);
+      border-radius: 2px;
+      transition: transform .3s, opacity .3s;
+    }
+
+    .hamburger.open span:nth-child(1) {
+      transform: translateY(7px) rotate(45deg);
+    }
+
+    .hamburger.open span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .hamburger.open span:nth-child(3) {
+      transform: translateY(-7px) rotate(-45deg);
+    }
+
+    .mobile-menu {
+      display: none;
+      flex-direction: column;
+      background: var(--green-deep);
+      padding: 1.5rem 1.5rem 2rem;
+      gap: .8rem;
+      border-top: 1px solid rgba(255, 255, 255, .08);
+    }
+
+    .mobile-menu a {
+      color: rgba(255, 255, 255, .85);
+      font-size: 1rem;
+      font-weight: 500;
+      padding: .6rem 0;
+      border-bottom: 1px solid rgba(255, 255, 255, .06);
+    }
+
+    .mobile-menu a:last-of-type {
+      border-bottom: none;
+    }
+
+    .mobile-menu .btn {
+      margin-top: .5rem;
+      width: fit-content;
+    }
+
+    .mobile-menu.open {
+      display: flex;
+    }
+
+    /* ===================== HERO ===================== */
+    .hero {
+      min-height: 100svh;
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding-top: 70px;
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+    }
+
+    .slide {
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+      opacity: 0;
+      animation: heroSlide 25s infinite;
+    }
+
+    .slide:nth-child(1) {
+      background-image: url("irrigation 1.jpg");
+      animation-delay: 0s;
+    }
+
+    .slide:nth-child(2) {
+      background-image: url("Large-Scale Crop Production.jpg");
+      animation-delay: 5s;
+    }
+
+    .slide:nth-child(3) {
+      background-image: url("Mechanised Farming.jpg");
+      animation-delay: 10s;
+    }
+
+    .slide:nth-child(4) {
+      background-image: url("tracktor.jpg");
+      animation-delay: 15s;
+    }
+
+    .slide:nth-child(5) {
+      background-image: url("spraying machine.jpg");
+      animation-delay: 20s;
+    }
+
+    @keyframes heroSlide {
+      0% {
+        opacity: 0;
+        transform: scale(1);
+      }
+
+      5% {
+        opacity: 1;
+      }
+
+      20% {
+        opacity: 1;
+        transform: scale(1.06);
+      }
+
+      25% {
+        opacity: 0;
+        transform: scale(1.08);
+      }
+
+      100% {
+        opacity: 0;
+        transform: scale(1);
+      }
+    }
+
+    .slide-dots {
+      position: absolute;
+      bottom: 1.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: .6rem;
+      z-index: 10;
+    }
+
+    .slide-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, .35);
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      transition: background .3s, transform .3s;
+      animation: dotActive 25s infinite;
+    }
+
+    .slide-dot:nth-child(1) {
+      animation-delay: 0s;
+    }
+
+    .slide-dot:nth-child(2) {
+      animation-delay: 5s;
+    }
+
+    .slide-dot:nth-child(3) {
+      animation-delay: 10s;
+    }
+
+    .slide-dot:nth-child(4) {
+      animation-delay: 15s;
+    }
+
+    .slide-dot:nth-child(5) {
+      animation-delay: 20s;
+    }
+
+    @keyframes dotActive {
+      0% {
+        background: rgba(240, 200, 74, .9);
+        transform: scale(1.3);
+      }
+
+      20% {
+        background: rgba(240, 200, 74, .9);
+        transform: scale(1.3);
+      }
+
+      25% {
+        background: rgba(255, 255, 255, .35);
+        transform: scale(1);
+      }
+
+      100% {
+        background: rgba(255, 255, 255, .35);
+        transform: scale(1);
+      }
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(8, 30, 15, .95) 0%, rgba(13, 59, 30, .9) 35%, rgba(26, 107, 56, .75) 70%, rgba(13, 59, 30, .65) 100%);
+    }
+
+    .hero-shape {
+      position: absolute;
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .hero-shape-1 {
+      width: 500px;
+      height: 500px;
+      border: 1px solid rgba(200, 155, 42, .15);
+      right: -120px;
+      top: 50%;
+      transform: translateY(-50%);
+      animation: spin 40s linear infinite;
+    }
+
+    .hero-shape-2 {
+      width: 300px;
+      height: 300px;
+      border: 1px solid rgba(46, 168, 79, .2);
+      right: 30px;
+      top: 50%;
+      transform: translateY(-50%);
+      animation: spin 25s linear infinite reverse;
+    }
+
+    @keyframes spin {
+      to {
+        transform: translateY(-50%) rotate(360deg);
+      }
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 680px;
+      width: 100%;
+      animation: fadeUp .9s ease both;
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(32px);
+      }
+
+      to {
+        opacity: 1;
+        transform: none;
+      }
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      background: rgba(200, 155, 42, .18);
+      border: 1px solid rgba(200, 155, 42, .35);
+      color: var(--gold-light);
+      font-size: .85rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      padding: .5rem 1.1rem;
+      border-radius: 50px;
+      margin-bottom: 1.2rem;
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.6rem, 6.5vw, 5rem);
+      font-weight: 900;
+      color: var(--white);
+      line-height: 1.08;
+      margin-bottom: 1.2rem;
+    }
+
+    .hero h1 em {
+      color: var(--gold-light);
+      font-style: normal;
+      font-weight: 900;
+    }
+
+    .hero p {
+      color: rgba(255, 255, 255, .82);
+      font-size: clamp(1.05rem, 2.2vw, 1.3rem);
+      font-weight: 500;
+      line-height: 1.7;
+      margin-bottom: 2rem;
+      max-width: 540px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .hero-stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-top: 3rem;
+      padding-top: 1.8rem;
+      border-top: 1px solid rgba(255, 255, 255, .12);
+    }
+
+    .hero-stat strong {
+      display: block;
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.7rem, 4.2vw, 2.3rem);
+      font-weight: 900;
+      color: var(--gold-light);
+    }
+
+    .hero-stat span {
+      font-size: .78rem;
+      color: rgba(255, 255, 255, .6);
+      text-transform: uppercase;
+      letter-spacing: .08em;
+    }
+
+    /* ===================== TICKER ===================== */
+    .ticker {
+      background: linear-gradient(90deg, #b88a20 0%, #c89b2a 30%, #d4aa3a 50%, #c89b2a 70%, #b88a20 100%);
+      overflow: hidden;
+      padding: .5rem 0;
+    }
+
+    .ticker-inner {
+      display: flex;
+      gap: 4rem;
+      animation: tickerScroll 28s linear infinite;
+      white-space: nowrap;
+      width: max-content;
+    }
+
+    .ticker-inner span {
+      font-size: .8rem;
+      font-weight: 600;
+      color: var(--white);
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      padding-right: 4rem;
+      border-right: 1px solid rgba(255, 255, 255, .3);
+    }
+
+    @keyframes tickerScroll {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    /* ===================== ABOUT ===================== */
+    .about {
+      padding: 80px 0;
+      background: linear-gradient(165deg, #ffffff 0%, #f9f6f0 40%, #f2ede3 100%);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .about-visual {
+      position: relative;
+    }
+
+    .about-img-wrap {
+      border-radius: 24px;
+      overflow: hidden;
+      aspect-ratio: 4/3;
+      box-shadow: var(--shadow);
+    }
+
+    .about-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .6s ease;
+    }
+
+    .about-img-wrap:hover img {
+      transform: scale(1.04);
+    }
+
+    .about-badge-float {
+      position: absolute;
+      bottom: -20px;
+      right: -16px;
+      background: var(--gold);
+      color: var(--white);
+      border-radius: 16px;
+      padding: .9rem 1.2rem;
+      font-weight: 700;
+      font-size: .9rem;
+      box-shadow: var(--shadow);
+      text-align: center;
+    }
+
+    .about-badge-float span {
+      display: block;
+      font-size: .68rem;
+      font-weight: 400;
+      opacity: .85;
+    }
+
+    .about-text .section-label {
+      margin-bottom: .7rem;
+    }
+
+    .about-text .section-title {
+      margin-bottom: 1.2rem;
+    }
+
+    .about-text p {
+      color: var(--text-mid);
+      line-height: 1.8;
+      margin-bottom: 1rem;
+      font-size: .97rem;
+    }
+
+    .about-pillars {
+      display: flex;
+      gap: .8rem;
+      margin-top: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .pillar {
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      background: var(--cream);
+      border-radius: 50px;
+      padding: .5rem 1rem;
+      font-size: .8rem;
+      font-weight: 600;
+      color: var(--green-deep);
+    }
+
+    .pillar-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--green-light);
+      flex-shrink: 0;
+    }
+
+    /* ===================== SERVICES ===================== */
+    .services {
+      padding: 80px 0;
+      background: linear-gradient(165deg, #f0ebe3 0%, #f7f3eb 40%, #ebe3d4 100%);
+    }
+
+    .services-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .services-header .section-label {
+      margin-bottom: .7rem;
+      display: block;
+    }
+
+    .services-header p {
+      color: var(--text-light);
+      max-width: 520px;
+      margin-inline: auto;
+      line-height: 1.7;
+      margin-top: .7rem;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .service-card {
+      background: linear-gradient(160deg, #ffffff 0%, #f9f6f0 100%);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: 0 8px 28px rgba(13, 59, 30, .1), 0 2px 8px rgba(13, 59, 30, .06);
+      border: 1px solid rgba(13, 59, 30, .08);
+      transition: transform .3s, box-shadow .3s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 16px 40px rgba(13, 59, 30, .18), 0 4px 12px rgba(13, 59, 30, .1);
+    }
+
+    .service-img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .service-body {
+      padding: 1.6rem;
+    }
+
+    .service-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--green-mid), var(--green-light));
+      display: grid;
+      place-items: center;
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+    }
+
+    .service-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      font-weight: 900;
+      color: var(--green-deep);
+      margin-bottom: .55rem;
+    }
+
+    .service-card p {
+      color: var(--text-light);
+      font-size: .88rem;
+      line-height: 1.7;
+      margin-bottom: 1.1rem;
+    }
+
+    .service-items {
+      display: flex;
+      flex-direction: column;
+      gap: .38rem;
+    }
+
+    .service-item {
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      font-size: .81rem;
+      color: var(--text-mid);
+      font-weight: 500;
+    }
+
+    .service-item::before {
+      content: '✓';
+      width: 18px;
+      height: 18px;
+      background: rgba(46, 168, 79, .12);
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      font-size: .7rem;
+      color: var(--green-light);
+      flex-shrink: 0;
+      font-weight: 700;
+    }
+
+    /* ===================== WHY ===================== */
+    .why {
+      padding: 80px 0;
+      background: linear-gradient(155deg, #061a0e 0%, #0a2e17 25%, #0d3b1e 55%, #15532e 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .why::before {
+      content: '';
+      position: absolute;
+      top: -200px;
+      right: -200px;
+      width: 600px;
+      height: 600px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(46, 168, 79, .22) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .why-header {
+      text-align: center;
+      margin-bottom: 3rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .why-header .section-label {
+      color: var(--gold-light);
+      margin-bottom: .7rem;
+      display: block;
+    }
+
+    .why-header .section-title {
+      color: var(--white);
+      margin-bottom: 1rem;
+    }
+
+    .why-header p {
+      color: rgba(255, 255, 255, .65);
+      max-width: 480px;
+      margin-inline: auto;
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .why-card {
+      background: rgba(255, 255, 255, .06);
+      border: 1px solid rgba(255, 255, 255, .1);
+      border-radius: var(--radius);
+      padding: 1.8rem 1.4rem;
+      text-align: center;
+      transition: background .3s, transform .3s;
+      backdrop-filter: blur(8px);
+    }
+
+    .why-card:hover {
+      background: rgba(255, 255, 255, .1);
+      transform: translateY(-4px);
+    }
+
+    .why-card .icon {
+      font-size: 2rem;
+      margin-bottom: .9rem;
+    }
+
+    .why-card h4 {
+      font-family: 'Playfair Display', serif;
+      color: var(--white);
+      font-size: 1.2rem;
+      font-weight: 900;
+      margin-bottom: .6rem;
+    }
+
+    .why-card p {
+      color: rgba(255, 255, 255, .6);
+      font-size: .87rem;
+      line-height: 1.65;
+    }
+
+    /* ===================== TESTIMONIALS ===================== */
+    .testimonials {
+      padding: 80px 0;
+      background: linear-gradient(165deg, #ebe3d4 0%, #f4efe6 45%, #f7f3eb 100%);
+    }
+
+    .testimonials-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .testimonials-header .section-label {
+      margin-bottom: .7rem;
+      display: block;
+    }
+
+    .testimonials-track {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .testimonial-card {
+      background: linear-gradient(160deg, #ffffff 0%, #f9f6f0 100%);
+      border-radius: var(--radius);
+      padding: 1.8rem;
+      box-shadow: 0 8px 28px rgba(13, 59, 30, .1), 0 2px 8px rgba(13, 59, 30, .06);
+      border: 1px solid rgba(13, 59, 30, .08);
+      position: relative;
+    }
+
+    .testimonial-card::before {
+      content: '"';
+      font-family: 'Playfair Display', serif;
+      font-size: 5rem;
+      color: var(--green-light);
+      opacity: .15;
+      position: absolute;
+      top: .5rem;
+      left: 1.2rem;
+      line-height: 1;
+      pointer-events: none;
+    }
+
+    .testimonial-text {
+      color: var(--text-mid);
+      font-size: .92rem;
+      line-height: 1.75;
+      margin-bottom: 1.4rem;
+      position: relative;
+      z-index: 1;
+      font-style: italic;
+    }
+
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: .8rem;
+    }
+
+    .author-avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--green-mid), var(--green-light));
+      display: grid;
+      place-items: center;
+      font-weight: 700;
+      color: var(--white);
+      font-size: .9rem;
+      flex-shrink: 0;
+    }
+
+    .author-info strong {
+      display: block;
+      font-size: .88rem;
+      color: var(--green-deep);
+    }
+
+    .author-info span {
+      font-size: .75rem;
+      color: var(--text-light);
+    }
+
+    .stars {
+      color: var(--gold);
+      font-size: .9rem;
+      margin-bottom: .5rem;
+    }
+
+    /* ===================== GALLERY ===================== */
+    .gallery {
+      padding: 80px 0;
+      background: linear-gradient(165deg, #f2ede3 0%, #f9f6f0 40%, #ffffff 100%);
+    }
+
+    .gallery-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .gallery-header .section-label {
+      margin-bottom: .7rem;
+      display: block;
+    }
+
+    .gallery-header p {
+      color: var(--text-light);
+      max-width: 520px;
+      margin-inline: auto;
+      line-height: 1.7;
+      margin-top: .7rem;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: 240px;
+      gap: 1rem;
+    }
+
+    .gallery-item {
+      border-radius: var(--radius);
+      overflow: hidden;
+      position: relative;
+      cursor: pointer;
+    }
+
+    .gallery-item.wide {
+      grid-column: span 2;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .5s ease;
+      display: block;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.06);
+    }
+
+    .gallery-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(to top, rgba(13, 59, 30, .88), transparent);
+      padding: 1.5rem 1.2rem .9rem;
+      transform: translateY(100%);
+      transition: transform .35s ease;
+    }
+
+    .gallery-item:hover .gallery-caption {
+      transform: none;
+    }
+
+    .gallery-caption h4 {
+      font-family: 'Playfair Display', serif;
+      color: var(--white);
+      font-size: 1rem;
+      margin-bottom: .2rem;
+    }
+
+    .gallery-caption p {
+      color: rgba(255, 255, 255, .72);
+      font-size: .78rem;
+    }
+
+    .lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, .9);
+      z-index: 9999;
+      place-items: center;
+    }
+
+    .lightbox.active {
+      display: grid;
+    }
+
+    .lightbox img {
+      max-width: 90vw;
+      max-height: 85vh;
+      object-fit: contain;
+      border-radius: var(--radius);
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: 1.5rem;
+      right: 2rem;
+      color: var(--white);
+      font-size: 2rem;
+      cursor: pointer;
+      background: none;
+      border: none;
+      line-height: 1;
+    }
+
+    .lightbox-nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--white);
+      font-size: 2rem;
+      cursor: pointer;
+      background: rgba(255, 255, 255, .1);
+      border: none;
+      padding: .5rem 1rem;
+      border-radius: 8px;
+    }
+
+    .lightbox-nav.prev {
+      left: 1rem;
+    }
+
+    .lightbox-nav.next {
+      right: 1rem;
+    }
+
+    /* ===================== PRODUCTS ===================== */
+    .products {
+      padding: 80px 0;
+      background: linear-gradient(165deg, #f7f3eb 0%, #f0ebe3 40%, #e5dcc9 100%);
+    }
+
+    .products-header {
+      margin-bottom: 3rem;
+    }
+
+    .products-header .section-label {
+      margin-bottom: .7rem;
+    }
+
+    .products-header p {
+      color: var(--text-light);
+      max-width: 480px;
+      line-height: 1.7;
+      margin-top: .7rem;
+    }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      grid-auto-rows: auto;
+      gap: 1.5rem;
+    }
+
+    .prod-card {
+      border-radius: var(--radius);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      min-height: 220px;
+      position: relative;
+      transition: transform .3s;
+    }
+
+    .prod-card:hover {
+      transform: scale(1.015);
+    }
+
+    .prod-card.featured {
+      grid-row: span 2;
+      min-height: 460px;
+    }
+
+    .prod-card img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .prod-card-inner {
+      position: relative;
+      z-index: 1;
+      background: linear-gradient(to top, rgba(13, 59, 30, .92) 0%, rgba(13, 59, 30, .4) 60%, transparent 100%);
+      padding: 1.4rem;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+
+    .prod-card h3 {
+      font-family: 'Playfair Display', serif;
+      color: var(--white);
+      font-size: clamp(1.15rem, 2.2vw, 1.6rem);
+      font-weight: 900;
+      margin-bottom: .4rem;
+    }
+
+    .prod-card p {
+      color: rgba(255, 255, 255, .75);
+      font-size: .83rem;
+      line-height: 1.6;
+    }
+
+    .prod-tag {
+      display: inline-block;
+      background: rgba(255, 255, 255, .15);
+      border: 1px solid rgba(255, 255, 255, .25);
+      color: var(--white);
+      font-size: .7rem;
+      font-weight: 600;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      padding: .3rem .75rem;
+      border-radius: 50px;
+      margin-bottom: .8rem;
+    }
+
+    /* ===================== MINING ===================== */
+    .mining {
+      padding: 80px 0;
+      background: linear-gradient(160deg, #040d08 0%, #08140c 20%, #0d1a10 40%, #0d3b1e 70%, #15532e 100%);
+      color: var(--white);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .mining-bg-anim {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      overflow: hidden;
+    }
+
+    .mining-particle {
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.15;
+      animation: miningFloat linear infinite;
+    }
+
+    .mining-particle.p1 {
+      width: 12px;
+      height: 12px;
+      background: var(--gold-light);
+      left: 8%;
+      top: 20%;
+      animation-duration: 18s;
+      animation-delay: 0s;
+    }
+
+    .mining-particle.p2 {
+      width: 8px;
+      height: 8px;
+      background: #fff;
+      left: 22%;
+      top: 65%;
+      animation-duration: 22s;
+      animation-delay: -4s;
+    }
+
+    .mining-particle.p3 {
+      width: 16px;
+      height: 16px;
+      background: var(--gold);
+      left: 45%;
+      top: 15%;
+      animation-duration: 20s;
+      animation-delay: -8s;
+    }
+
+    .mining-particle.p4 {
+      width: 10px;
+      height: 10px;
+      background: var(--gold-light);
+      left: 70%;
+      top: 50%;
+      animation-duration: 16s;
+      animation-delay: -2s;
+    }
+
+    .mining-particle.p5 {
+      width: 14px;
+      height: 14px;
+      background: #fff;
+      left: 85%;
+      top: 25%;
+      animation-duration: 24s;
+      animation-delay: -6s;
+    }
+
+    .mining-particle.p6 {
+      width: 9px;
+      height: 9px;
+      background: var(--gold);
+      left: 60%;
+      top: 80%;
+      animation-duration: 19s;
+      animation-delay: -10s;
+    }
+
+    .mining-particle.p7 {
+      width: 11px;
+      height: 11px;
+      background: var(--gold-light);
+      left: 15%;
+      top: 85%;
+      animation-duration: 21s;
+      animation-delay: -3s;
+    }
+
+    .mining-particle.p8 {
+      width: 7px;
+      height: 7px;
+      background: #fff;
+      left: 92%;
+      top: 70%;
+      animation-duration: 17s;
+      animation-delay: -7s;
+    }
+
+    .mining-ring {
+      position: absolute;
+      border-radius: 50%;
+      border: 1px solid rgba(200, 155, 42, 0.12);
+      animation: miningSpin linear infinite;
+      pointer-events: none;
+    }
+
+    .mining-ring.r1 {
+      width: 420px;
+      height: 420px;
+      right: -100px;
+      top: 10%;
+      animation-duration: 50s;
+    }
+
+    .mining-ring.r2 {
+      width: 280px;
+      height: 280px;
+      left: -80px;
+      bottom: 5%;
+      animation-duration: 35s;
+      animation-direction: reverse;
+    }
+
+    .mining-ring.r3 {
+      width: 180px;
+      height: 180px;
+      right: 15%;
+      bottom: 20%;
+      animation-duration: 40s;
+      border-color: rgba(46, 168, 79, 0.1);
+    }
+
+    @keyframes miningFloat {
+      0% {
+        transform: translateY(0) translateX(0) scale(1);
+        opacity: 0.1;
+      }
+
+      25% {
+        transform: translateY(-40px) translateX(20px) scale(1.2);
+        opacity: 0.25;
+      }
+
+      50% {
+        transform: translateY(-80px) translateX(-10px) scale(0.9);
+        opacity: 0.15;
+      }
+
+      75% {
+        transform: translateY(-30px) translateX(30px) scale(1.1);
+        opacity: 0.22;
+      }
+
+      100% {
+        transform: translateY(0) translateX(0) scale(1);
+        opacity: 0.1;
+      }
+    }
+
+    @keyframes miningSpin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .mining>.container {
+      position: relative;
+      z-index: 1;
+    }
+
+    .mining-header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+
+    .mining-header .section-label {
+      color: var(--gold-light);
+      margin-bottom: .7rem;
+      display: block;
+    }
+
+    .mining-header .section-title {
+      color: var(--white);
+      margin-bottom: 1rem;
+    }
+
+    .mining-header p {
+      color: rgba(255, 255, 255, .75);
+      max-width: 620px;
+      margin-inline: auto;
+      line-height: 1.7;
+    }
+
+    .mining-media {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .mining-video-wrap {
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: 0 16px 40px rgba(0, 0, 0, .4);
+      border: 1px solid rgba(255, 255, 255, .1);
+      background: #000;
+    }
+
+    .mining-video-wrap video {
+      width: 100%;
+      display: block;
+      aspect-ratio: 4/3;
+      object-fit: cover;
+      max-height: 360px;
+    }
+
+    .mining-mineral {
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, .12);
+      box-shadow: 0 16px 40px rgba(0, 0, 0, .35);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .mining-mineral img {
+      width: 100%;
+      height: 100%;
+      min-height: 280px;
+      object-fit: cover;
+      display: block;
+      flex: 1;
+    }
+
+    .mining-mineral-caption {
+      background: rgba(0, 0, 0, .45);
+      padding: .75rem 1rem;
+      font-size: .82rem;
+      color: rgba(255, 255, 255, .9);
+      text-align: center;
+    }
+
+    .mining-content {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 2.5rem;
+    }
+
+    .mining-content h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      color: var(--gold-light);
+      margin-bottom: 1rem;
+    }
+
+    .mining-content p {
+      color: rgba(255, 255, 255, .8);
+      line-height: 1.8;
+      margin-bottom: 1rem;
+      font-size: .95rem;
+    }
+
+    .mining-features {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: .9rem;
+      margin: 1.5rem 0 0;
+    }
+
+    .mining-feat {
+      background: rgba(255, 255, 255, .06);
+      border: 1px solid rgba(255, 255, 255, .1);
+      border-radius: 10px;
+      padding: .9rem 1rem;
+      font-size: .88rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: .5rem;
+      text-align: center;
+    }
+
+    .mining-feat span {
+      font-size: 1.15rem;
+    }
+
+    .mining-equip-header {
+      text-align: center;
+      margin: 2.5rem 0 1.5rem;
+    }
+
+    .mining-equip-header h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      color: var(--gold-light);
+      margin-bottom: .5rem;
+    }
+
+    .mining-equip-header p {
+      color: rgba(255, 255, 255, .7);
+      font-size: .92rem;
+    }
+
+    .mining-equip-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.3rem;
+    }
+
+    .equip-card {
+      background: rgba(255, 255, 255, .05);
+      border: 1px solid rgba(255, 255, 255, .1);
+      border-radius: var(--radius);
+      overflow: hidden;
+      transition: transform .3s, background .3s, box-shadow .3s;
+    }
+
+    .equip-card:hover {
+      transform: translateY(-5px);
+      background: rgba(255, 255, 255, .09);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, .25);
+    }
+
+    .equip-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .equip-card-body {
+      padding: 1.2rem 1.15rem 1.4rem;
+      text-align: center;
+    }
+
+    .equip-icon {
+      font-size: 1.6rem;
+      margin-bottom: .4rem;
+      display: block;
+    }
+
+    .equip-card h4 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      font-weight: 900;
+      color: var(--white);
+      margin-bottom: .4rem;
+    }
+
+    .equip-card p {
+      color: rgba(255, 255, 255, .7);
+      font-size: .85rem;
+      line-height: 1.55;
+    }
+
+    .mining-cta {
+      text-align: center;
+      margin-top: 2.2rem;
+    }
+
+    .mining-services-header {
+      text-align: center;
+      margin: 2.8rem 0 1.5rem;
+    }
+
+    .mining-services-header h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      color: var(--gold-light);
+      margin-bottom: .5rem;
+    }
+
+    .mining-services-header p {
+      color: rgba(255, 255, 255, .7);
+      font-size: .92rem;
+      max-width: 520px;
+      margin-inline: auto;
+    }
+
+    .mining-services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.3rem;
+    }
+
+    .ms-card {
+      background: rgba(255, 255, 255, .05);
+      border: 1px solid rgba(255, 255, 255, .1);
+      border-radius: var(--radius);
+      overflow: hidden;
+      transition: transform .3s, background .3s, border-color .3s, box-shadow .3s;
+    }
+
+    .ms-card:hover {
+      transform: translateY(-5px);
+      background: rgba(255, 255, 255, .09);
+      border-color: rgba(200, 155, 42, .35);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, .25);
+    }
+
+    .ms-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .ms-card-body {
+      padding: 1.25rem 1.2rem 1.4rem;
+    }
+
+    .ms-icon {
+      font-size: 1.5rem;
+      margin-bottom: .5rem;
+      display: block;
+    }
+
+    .ms-card h4 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.25rem;
+      font-weight: 900;
+      color: var(--white);
+      margin-bottom: .5rem;
+    }
+
+    .ms-card p {
+      color: rgba(255, 255, 255, .72);
+      font-size: .88rem;
+      line-height: 1.65;
+      margin-bottom: .9rem;
+    }
+
+    .ms-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .ms-list li {
+      color: rgba(255, 255, 255, .8);
+      font-size: .84rem;
+      padding: .28rem 0;
+      display: flex;
+      align-items: flex-start;
+      gap: .45rem;
+    }
+
+    .ms-list li::before {
+      content: "✓";
+      color: var(--gold-light);
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .mining-deposits-header {
+      text-align: center;
+      margin: 2.8rem 0 1.5rem;
+    }
+
+    .mining-deposits-header h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      color: var(--gold-light);
+      margin-bottom: .5rem;
+    }
+
+    .mining-deposits-header p {
+      color: rgba(255, 255, 255, .7);
+      font-size: .92rem;
+      max-width: 540px;
+      margin-inline: auto;
+    }
+
+    .mining-deposits-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 1.2rem;
+    }
+
+    .deposit-card {
+      background: rgba(255, 255, 255, .05);
+      border: 1px solid rgba(255, 255, 255, .1);
+      border-radius: var(--radius);
+      overflow: hidden;
+      transition: transform .3s, background .3s, box-shadow .3s;
+    }
+
+    .deposit-card:hover {
+      transform: translateY(-5px);
+      background: rgba(255, 255, 255, .09);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, .25);
+    }
+
+    .deposit-card img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .deposit-card-body {
+      padding: 1.15rem 1.15rem 1.35rem;
+    }
+
+    .deposit-card h4 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      font-weight: 900;
+      color: var(--white);
+      margin-bottom: .4rem;
+      display: flex;
+      align-items: center;
+      gap: .45rem;
+    }
+
+    .deposit-card p {
+      color: rgba(255, 255, 255, .72);
+      font-size: .86rem;
+      line-height: 1.6;
+      margin-bottom: .7rem;
+    }
+
+    .deposit-tag {
+      display: inline-block;
+      font-size: .72rem;
+      font-weight: 600;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      color: var(--gold-light);
+      background: rgba(200, 155, 42, .15);
+      border: 1px solid rgba(200, 155, 42, .3);
+      padding: .25rem .6rem;
+      border-radius: 50px;
+    }
+
+    /* WhatsApp floating button */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      z-index: 950;
+      width: 60px;
+      height: 60px;
+      background: #25D366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 24px rgba(37, 211, 102, .45);
+      transition: transform .25s, box-shadow .25s;
+      text-decoration: none;
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.08);
+      box-shadow: 0 8px 28px rgba(37, 211, 102, .55);
+    }
+
+    .whatsapp-float svg {
+      width: 32px;
+      height: 32px;
+      fill: #fff;
+    }
+
+    .whatsapp-float .wa-tooltip {
+      position: absolute;
+      right: 70px;
+      background: #075E54;
+      color: #fff;
+      padding: .45rem .85rem;
+      border-radius: 8px;
+      font-size: .8rem;
+      font-weight: 600;
+      white-space: nowrap;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .25s;
+    }
+
+    .whatsapp-float:hover .wa-tooltip {
+      opacity: 1;
+    }
+
+    /* ===================== CTA STRIP ===================== */
+    .cta-strip {
+      padding: 70px 0;
+      background: linear-gradient(145deg, #a67c15 0%, #c89b2a 30%, #e0b84a 55%, #c89b2a 80%, #a67c15 100%);
+      text-align: center;
+    }
+
+    .cta-strip h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.9rem, 4.5vw, 3.2rem);
+      font-weight: 900;
+      color: var(--white);
+      margin-bottom: 1rem;
+    }
+
+    .cta-strip p {
+      color: rgba(255, 255, 255, .85);
+      max-width: 520px;
+      margin: 0 auto 2rem;
+      line-height: 1.7;
+    }
+
+    .cta-strip-actions {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    /* ===================== CONTACT ===================== */
+    .contact {
+      padding: 80px 0;
+      background: linear-gradient(165deg, #e5dcc9 0%, #f0ebe3 40%, #f7f3eb 100%);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.4fr;
+      gap: 4rem;
+      align-items: start;
+    }
+
+    .contact-info .section-label {
+      margin-bottom: .7rem;
+    }
+
+    .contact-info .section-title {
+      margin-bottom: 1.2rem;
+    }
+
+    .contact-info>p {
+      color: var(--text-mid);
+      line-height: 1.8;
+      margin-bottom: 2rem;
+    }
+
+    .contact-details {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .contact-detail {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      background: linear-gradient(160deg, #ffffff 0%, #f9f6f0 100%);
+      border-radius: var(--radius);
+      padding: 1rem 1.2rem;
+      box-shadow: 0 6px 20px rgba(13, 59, 30, .1), 0 2px 6px rgba(13, 59, 30, .05);
+    }
+
+    .cd-icon {
+      width: 40px;
+      height: 40px;
+      flex-shrink: 0;
+      background: linear-gradient(135deg, var(--green-mid), var(--green-light));
+      border-radius: 10px;
+      display: grid;
+      place-items: center;
+      font-size: 1.1rem;
+    }
+
+    .cd-text strong {
+      display: block;
+      font-size: .82rem;
+      color: var(--text-light);
+      font-weight: 500;
+      margin-bottom: .2rem;
+    }
+
+    .cd-text span {
+      color: var(--text-dark);
+      font-weight: 600;
+      font-size: .92rem;
+    }
+
+    .cd-text a {
+      color: var(--text-dark);
+      font-weight: 600;
+      font-size: .92rem;
+    }
+
+    .contact-form {
+      background: linear-gradient(160deg, #ffffff 0%, #f9f6f0 100%);
+      border-radius: 20px;
+      padding: 2.5rem;
+      box-shadow: 0 12px 40px rgba(13, 59, 30, .14), 0 4px 12px rgba(13, 59, 30, .08);
+    }
+
+    .contact-form h3 {
+      font-family: 'Playfair Display', serif;
+      color: var(--green-deep);
+      font-size: 1.75rem;
+      font-weight: 900;
+      margin-bottom: 1.8rem;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: .45rem;
+      margin-bottom: 1.1rem;
+    }
+
+    .form-group label {
+      font-size: .82rem;
+      font-weight: 600;
+      color: var(--text-mid);
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      padding: .85rem 1rem;
+      border: 1.5px solid #e0e8e2;
+      border-radius: 10px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: .93rem;
+      color: var(--text-dark);
+      background: var(--cream);
+      transition: border-color .2s, box-shadow .2s;
+      outline: none;
+      resize: none;
+      width: 100%;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--green-light);
+      box-shadow: 0 0 0 3px rgba(46, 168, 79, .12);
+      background: var(--white);
+    }
+
+    .form-group textarea {
+      min-height: 120px;
+    }
+
+    .form-submit {
+      width: 100%;
+      justify-content: center;
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    .ai-response {
+      margin-top: 1.2rem;
+      padding: 1.2rem;
+      background: linear-gradient(135deg, rgba(13, 59, 30, .05), rgba(46, 168, 79, .08));
+      border: 1px solid rgba(46, 168, 79, .2);
+      border-radius: 12px;
+      display: none;
+    }
+
+    .ai-response.visible {
+      display: block;
+    }
+
+    .ai-response-header {
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      font-size: .8rem;
+      font-weight: 600;
+      color: var(--green-mid);
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      margin-bottom: .6rem;
+    }
+
+    .ai-response-text {
+      font-size: .92rem;
+      color: var(--text-mid);
+      line-height: 1.7;
+    }
+
+    .typing-indicator {
+      display: flex;
+      gap: 4px;
+      align-items: center;
+    }
+
+    .typing-indicator span {
+      width: 6px;
+      height: 6px;
+      background: var(--green-light);
+      border-radius: 50%;
+      animation: bounce 1.2s infinite;
+    }
+
+    .typing-indicator span:nth-child(2) {
+      animation-delay: .2s;
+    }
+
+    .typing-indicator span:nth-child(3) {
+      animation-delay: .4s;
+    }
+
+    @keyframes bounce {
+
+      0%,
+      60%,
+      100% {
+        transform: translateY(0);
+      }
+
+      30% {
+        transform: translateY(-8px);
+      }
+    }
+
+    .form-success {
+      text-align: center;
+      padding: 2rem;
+      display: none;
+    }
+
+    .form-success.visible {
+      display: block;
+    }
+
+    .success-icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .form-error {
+      color: #c62828;
+      font-size: .82rem;
+      margin-top: .3rem;
+      display: none;
+    }
+
+    /* ===================== FOOTER ===================== */
+    footer {
+      background: linear-gradient(170deg, #061a0e 0%, #0a2e17 30%, #0d3b1e 70%, #124a28 100%);
+      color: rgba(255, 255, 255, .75);
+      padding: 60px 0 28px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2.5rem;
+      margin-bottom: 3rem;
+    }
+
+    .footer-brand .logo {
+      margin-bottom: 1rem;
+    }
+
+    .footer-brand p {
+      font-size: .88rem;
+      line-height: 1.75;
+      max-width: 280px;
+    }
+
+    .footer-col h5 {
+      color: var(--white);
+      font-size: .82rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      margin-bottom: 1.2rem;
+    }
+
+    .footer-col a {
+      display: block;
+      color: rgba(255, 255, 255, .62);
+      font-size: .88rem;
+      margin-bottom: .65rem;
+      transition: color .2s;
+    }
+
+    .footer-col a:hover {
+      color: var(--gold-light);
+    }
+
+    /* ===================== PARTNERS STRIP ===================== */
+    .partners-strip {
+      text-align: center;
+      padding: 2.5rem 0 0;
+      border-top: 1px solid rgba(255, 255, 255, .08);
+    }
+
+    .partners-label {
+      color: #d4aa50;
+      font-size: .75rem;
+      font-weight: 700;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      margin-bottom: 1.8rem;
+      display: block;
+    }
+
+    .partners-row {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 1.5rem 2rem;
+    }
+
+    .partner-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: .65rem;
+      flex: 0 1 120px;
+    }
+
+    .partner-initials {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, .92);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, .3);
+      flex-shrink: 0;
+    }
+
+    .partner-initials img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      padding: 6px;
+    }
+
+    .partner-item span {
+      font-size: .7rem;
+      color: #a8d4c8;
+      line-height: 1.4;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    /* ===================== FOOTER BOTTOM ===================== */
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, .08);
+      padding-top: 1.5rem;
+      margin-top: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: .82rem;
+    }
+
+    .footer-bottom span {
+      color: rgba(255, 255, 255, .4);
+    }
+
+    .footer-bottom strong {
+      color: var(--gold-light);
+    }
+
+    /* ===================== BACK TO TOP ===================== */
+    .back-top {
+      position: fixed;
+      bottom: 1.5rem;
+      right: 6.2rem;
+      z-index: 800;
+      width: 46px;
+      height: 46px;
+      background: var(--green-light);
+      border: none;
+      border-radius: 50%;
+      color: var(--white);
+      font-size: 1.2rem;
+      cursor: pointer;
+      box-shadow: 0 4px 20px rgba(46, 168, 79, .4);
+      display: grid;
+      place-items: center;
+      transition: opacity .3s, transform .3s;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .back-top.visible {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .back-top:hover {
+      transform: translateY(-3px);
+    }
+
+    /* ===================== SCROLL REVEAL ===================== */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity .7s ease, transform .7s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    .reveal-delay-1 {
+      transition-delay: .1s;
+    }
+
+    .reveal-delay-2 {
+      transition-delay: .2s;
+    }
+
+    .reveal-delay-3 {
+      transition-delay: .3s;
+    }
+
+    .reveal-delay-4 {
+      transition-delay: .4s;
+    }
+
+    /* ===================== LOADING STATE ===================== */
+    .btn-loading {
+      opacity: .7;
+      pointer-events: none;
+    }
+
+    .btn-loading::after {
+      content: '';
+      display: inline-block;
+      width: 14px;
+      height: 14px;
+      border: 2px solid rgba(255, 255, 255, .4);
+      border-top-color: white;
+      border-radius: 50%;
+      animation: spin2 .7s linear infinite;
+      margin-left: .5rem;
+    }
+
+    @keyframes spin2 {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    /* ===================== RESPONSIVE ===================== */
+    @media (max-width: 1100px) {
+      .nav-links {
+        gap: 1.1rem;
+      }
+
+      .nav-links a {
+        font-size: .8rem;
+      }
+
+      .products-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .prod-card.featured {
+        grid-row: span 1;
+        min-height: 240px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+      }
+    }
+
+    @media (max-width: 900px) {
+
+      .nav-links,
+      .nav-cta {
+        display: none !important;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+
+      .about-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+
+      .about-badge-float {
+        position: static;
+        display: inline-block;
+        margin-top: 1rem;
+      }
+
+      .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 200px;
+      }
+
+      .gallery-item.wide {
+        grid-column: span 2;
+      }
+
+      .products-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .prod-card.featured {
+        grid-row: span 1;
+        min-height: 200px;
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+      }
+
+      .mining-media {
+        grid-template-columns: 1fr;
+      }
+
+      .mining-video-wrap video {
+        max-height: 320px;
+        aspect-ratio: 16/9;
+      }
+
+      .mining-features {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .mining-mineral img {
+        min-height: 240px;
+      }
+    }
+
+    @media (max-width: 640px) {
+
+      .hero-shape-1,
+      .hero-shape-2 {
+        display: none;
+      }
+
+      .hero-actions {
+        flex-direction: column;
+      }
+
+      .hero-actions .btn {
+        width: 100%;
+      }
+
+      .hero-stats {
+        gap: 1.2rem;
+      }
+
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .why-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .testimonials-track {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: none;
+      }
+
+      .gallery-item,
+      .gallery-item.wide {
+        grid-column: span 1;
+        height: 200px;
+      }
+
+      .products-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cta-strip-actions {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .cta-strip-actions .btn {
+        width: 100%;
+        max-width: 300px;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-form {
+        padding: 1.6rem;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .footer-brand p {
+        max-width: 100%;
+      }
+
+      .partners-row {
+        gap: 1.2rem 1rem;
+      }
+
+      .partner-item {
+        flex: 0 1 80px;
+      }
+
+      .partner-initials {
+        width: 58px;
+        height: 58px;
+      }
+
+      .mining-features {
+        grid-template-columns: 1fr;
+      }
+
+      .mining {
+        padding: 60px 0;
+      }
+
+      .whatsapp-float {
+        bottom: 20px;
+        right: 18px;
+        width: 54px;
+        height: 54px;
+      }
+
+      .whatsapp-float svg {
+        width: 28px;
+        height: 28px;
+      }
+
+      .back-top {
+        right: 5.4rem;
+        bottom: 1.4rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .logo-text strong {
+        font-size: 1rem;
+        font-weight: 900;
+      }
+
+      .logo-text span {
+        font-size: .55rem;
+        letter-spacing: .06em;
+      }
+
+      .logo-icon {
+        width: 38px;
+        height: 38px;
+        min-width: 38px;
+      }
+
+      .why-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-stats {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+      }
+
+      .about,
+      .services,
+      .why,
+      .testimonials,
+      .gallery,
+      .products,
+      .contact {
+        padding: 60px 0;
+      }
+
+      .cta-strip {
+        padding: 50px 0;
+      }
+
+      .partners-row {
+        gap: 1rem .8rem;
+      }
+
+      .partner-item {
+        flex: 0 1 70px;
+      }
+
+      .partner-initials {
+        width: 52px;
+        height: 52px;
+      }
+
+      .partner-item span {
+        font-size: .62rem;
+      }
+    }
+
+    @media (max-width: 360px) {
+      .logo-text strong {
+        font-size: .9rem;
+        font-weight: 900;
+      }
+
+      .container {
+        width: 95%;
+      }
+
+      .contact-form {
+        padding: 1.2rem;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <div id="progress-bar" role="progressbar" aria-label="Page scroll progress"></div>
+
+  <!-- HEADER -->
+  <header id="site-header">
+    <nav class="container" aria-label="Main navigation">
+      <a href="#" class="logo" aria-label="Grow Tech Agro Nig. Ltd — home">
+        <div class="logo-icon">
+          <img src="logo.jpg" alt="" aria-hidden="true" />
+        </div>
+        <div class="logo-text">
+          <strong>Grow Tech Agro Nig. Ltd</strong>
+          <span>Agro Alliance · Mining &amp; Minerals</span>
+        </div>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#mining" style="color: var(--gold-light); font-weight: 600;">Mining</a></li>
+        <li><a href="#gallery">Our Work</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn btn-primary nav-cta">Get a Quote</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false"
+        aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+    <div class="mobile-menu" id="mobile-menu" role="navigation" aria-label="Mobile navigation">
+      <a href="#about" onclick="closeMenu()">About</a>
+      <a href="#services" onclick="closeMenu()">Services</a>
+      <a href="#mining" onclick="closeMenu()" style="color: var(--gold-light); font-weight: 600;">Mining</a>
+      <a href="#gallery" onclick="closeMenu()">Our Work</a>
+      <a href="#products" onclick="closeMenu()">Products</a>
+      <a href="#testimonials" onclick="closeMenu()">Reviews</a>
+      <a href="blog.html" onclick="closeMenu()">Blog</a>
+      <a href="#contact" onclick="closeMenu()">Contact</a>
+      <a href="#contact" class="btn btn-primary" onclick="closeMenu()">Get a Quote</a>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- HERO -->
+    <section class="hero" id="home" aria-label="Hero banner">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="slide"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+      </div>
+      <div class="slide-dots" aria-hidden="true">
+        <button class="slide-dot" aria-label="Slide 1"></button>
+        <button class="slide-dot" aria-label="Slide 2"></button>
+        <button class="slide-dot" aria-label="Slide 3"></button>
+        <button class="slide-dot" aria-label="Slide 4"></button>
+        <button class="slide-dot" aria-label="Slide 5"></button>
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge">Agro Alliance · Mining &amp; Minerals · Nigeria</div>
+          <h1>Growing Nigeria's<br /><em>Agricultural Future</em></h1>
+          <p>Grow Tech Nig Ltd delivers end-to-end agricultural solutions — from premium crop production to quality
+            chemicals, fertilizers, and modern farming machinery. Our Mining &amp; Mineral Resources division handles
+            site exploration, excavation, sampling, and bulk supply of industrial minerals including quartz/silica,
+            laterite, clay &amp; kaolin, limestone, feldspar, and construction aggregates — powering Nigeria’s
+            agro-industrial and construction sectors with safe, responsible operations.</p>
+          <div class="hero-actions">
+            <a href="#services" class="btn btn-primary">Explore Services ↓</a>
+            <a href="#contact" class="btn btn-outline">Talk to an Expert</a>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <strong><span class="counter" data-target="500">0</span>+</strong>
+              <span>Farmers Served</span>
+            </div>
+            <div class="hero-stat">
+              <strong><span class="counter" data-target="5">0</span></strong>
+              <span>Core Divisions</span>
+            </div>
+            <div class="hero-stat">
+              <strong><span class="counter" data-target="100">0</span>%</strong>
+              <span>Nigerian Owned</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-shape hero-shape-1" aria-hidden="true"></div>
+      <div class="hero-shape hero-shape-2" aria-hidden="true"></div>
+    </section>
+
+    <!-- TICKER -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-inner">
+        <span>🌾 Crop Production</span>
+        <span>🧪 Agro Chemicals</span>
+        <span>🪣 Fertilizers</span>
+        <span>🚜 Farm Machinery</span>
+        <span>💧 Irrigation Systems</span>
+        <span>⛏️ Mining & Minerals</span>
+        <span>🌱 Certified Seeds</span>
+        <span>📊 Agronomic Advisory</span>
+        <span>🇳🇬 Serving All of Nigeria</span>
+        <span>🌾 Crop Production</span>
+        <span>🧪 Agro Chemicals</span>
+        <span>🪣 Fertilizers</span>
+        <span>🚜 Farm Machinery</span>
+        <span>💧 Irrigation Systems</span>
+        <span>⛏️ Mining & Minerals</span>
+        <span>🌱 Certified Seeds</span>
+        <span>📊 Agronomic Advisory</span>
+        <span>🇳🇬 Serving All of Nigeria</span>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-visual reveal">
+            <div class="about-img-wrap">
+              <img src="Farmer Training.jpg" alt="Grow Tech agronomists conducting farmer training session in Nigeria"
+                loading="lazy" width="600" height="450" />
+            </div>
+            <div class="about-badge-float">
+              Trusted Partner<br />
+              <span>in Nigerian Agriculture</span>
+            </div>
+          </div>
+          <div class="about-text">
+            <span class="section-label reveal">Who We Are</span>
+            <h2 class="section-title reveal reveal-delay-1">Powering Agriculture<br />Across Nigeria</h2>
+            <p class="reveal reveal-delay-2">Grow Tech Nigeria Ltd is a proud member of the <strong>Agro
+                Alliance</strong> family. We are committed to transforming the Nigerian agricultural landscape through
+              innovation, quality inputs, and modern farming technologies — while expanding into responsible mineral
+              exploration and extraction.</p>
+            <p class="reveal reveal-delay-2">Our integrated approach bridges the gap between the farm and the market —
+              supplying farmers, cooperatives, and agribusinesses with everything they need to thrive. Through our
+              Mining &amp; Mineral Resources division we also deliver industrial minerals that support agro-processing,
+              construction, and national development.</p>
+            <div class="about-pillars reveal reveal-delay-3">
+              <div class="pillar"><span class="pillar-dot"></span>Crop Production</div>
+              <div class="pillar"><span class="pillar-dot"></span>Agro Chemicals</div>
+              <div class="pillar"><span class="pillar-dot"></span>Fertilizers</div>
+              <div class="pillar"><span class="pillar-dot"></span>Farm Machinery</div>
+              <div class="pillar"><span class="pillar-dot"></span>Mining &amp; Minerals</div>
+            </div>
+            <div style="margin-top:2rem;" class="reveal reveal-delay-4">
+              <a href="#contact" class="btn btn-primary">Partner With Us →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services" id="services">
+      <div class="container">
+        <div class="services-header reveal">
+          <span class="section-label">What We Do</span>
+          <h2 class="section-title">Our Core Agricultural & Mining Services</h2>
+          <p>
+            Comprehensive agricultural and mining solutions, including crop production,
+            agrochemical supply, heavy machinery, mineral exploration support,
+            and equipment supply for farmers, agribusinesses, and mining operators
+            across Nigeria.
+          </p>
+        </div>
+        <div class="services-grid">
+          <article class="service-card reveal reveal-delay-1">
+            <img class="service-img" src="Crop Production.jpg"
+              alt="Large-scale crop production fields managed by Grow Tech" loading="lazy" width="400" height="180" />
+            <div class="service-body">
+              <div class="service-icon" aria-hidden="true">🌾</div>
+              <h3>Crop Production</h3>
+              <p>Commercial production of high-yield crops using certified seeds, modern agronomic practices, and
+                sustainable farming techniques.</p>
+              <div class="service-items">
+                <div class="service-item">Certified Seed Supply</div>
+                <div class="service-item">Agronomic Advisory</div>
+                <div class="service-item">Harvest &amp; Post-Harvest Support</div>
+                <div class="service-item">Contract Farming Options</div>
+              </div>
+            </div>
+          </article>
+          <article class="service-card reveal reveal-delay-2">
+            <img class="service-img" src="Pesticides & Herbicides.jpg"
+              alt="Registered pesticides and herbicides for crop protection" loading="lazy" width="400" height="180" />
+            <div class="service-body">
+              <div class="service-icon" aria-hidden="true">🧪</div>
+              <h3>Agricultural Chemicals</h3>
+              <p>Supply of quality, registered pesticides, herbicides, fungicides, and bio-stimulants for effective crop
+                protection.</p>
+              <div class="service-items">
+                <div class="service-item">Herbicides &amp; Fungicides</div>
+                <div class="service-item">Insecticides &amp; Nematicides</div>
+                <div class="service-item">Bio-stimulants</div>
+                <div class="service-item">Bulk &amp; Retail Supply</div>
+              </div>
+            </div>
+          </article>
+          </article>
+          <article class="service-card reveal reveal-delay-2">
+            <img class="service-img" src="Clay and kaolin deposit site.jpg"
+              alt="Mineral sampling tools and geological field equipment" loading="lazy" width="400" height="180" />
+            <div class="service-body">
+              <div class="service-icon" aria-hidden="true">⛏️</div>
+              <h3>Mineral Exploration & Sampling Support</h3>
+              <p>Provision of mineral sampling tools, geological field equipment,
+                and operational support solutions for mineral exploration and
+                assessment activities.</p>
+              <div class="service-items">
+                <div class="service-item">Mineral Sampling &amp; Equipment</div>
+                <div class="service-item">Geological Field &amp; Instruments</div>
+                <div class="service-item">Mineral Assessment Support</div>
+                <div class="service-item">Mining Site &amp; Preparation</div>
+              </div>
+            </div>
+          </article>
+          <article class="service-card reveal reveal-delay-3">
+            <img class="service-img" src="naspack spary.jpg" alt="NPK and organic fertilizer blends for all soil types"
+              loading="lazy" width="400" height="180" />
+            <div class="service-body">
+              <div class="service-icon" aria-hidden="true">🪣</div>
+              <h3>Fertilizers</h3>
+              <p>A wide range of organic, inorganic, and blended fertilizers to boost soil fertility and maximise crop
+                yields.</p>
+              <div class="service-items">
+                <div class="service-item">NPK Blended Fertilizers</div>
+                <div class="service-item">Urea &amp; CAN</div>
+                <div class="service-item">Organic Fertilizers</div>
+                <div class="service-item">Soil Testing Advisory</div>
+              </div>
+            </div>
+          </article>
+          <article class="service-card reveal reveal-delay-4">
+            <img class="service-img" src="Tractors & Implement.jpg"
+              alt="Modern tractors and farm implements supplied by Grow Tech" loading="lazy" width="400" height="180" />
+            <div class="service-body">
+              <div class="service-icon" aria-hidden="true">🚜</div>
+              <h3>Agricultural Machinery</h3>
+              <p>Sales, supply, and after-sales support for tractors, irrigation systems, and a wide array of farm
+                equipment.</p>
+              <div class="service-items">
+                <div class="service-item">Tractors &amp; Implements</div>
+                <div class="service-item">Irrigation Equipment</div>
+                <div class="service-item">Processing Machines</div>
+                <div class="service-item">Spare Parts &amp; Servicing</div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY US -->
+    <section class="why" aria-labelledby="why-heading">
+      <div class="container">
+        <div class="why-header reveal">
+          <span class="section-label">Why Choose Us</span>
+          <h2 class="section-title" id="why-heading">The Agro Tech Advantage</h2>
+          <p>We combine local expertise with international standards to deliver results you can count on.</p>
+        </div>
+        <div class="why-grid">
+          <div class="why-card reveal reveal-delay-1">
+            <div class="icon" aria-hidden="true">🏅</div>
+            <h4>Quality Assured</h4>
+            <p>All our inputs are sourced from certified manufacturers and tested to meet Nigerian &amp; international
+              quality standards.</p>
+          </div>
+          <div class="why-card reveal reveal-delay-2">
+            <div class="icon" aria-hidden="true">🤝</div>
+            <h4>Alliance Network</h4>
+            <p>As part of the Agro Alliance family, we tap into a powerful network of partners, distributors, and
+              research institutions.</p>
+          </div>
+          <div class="why-card reveal reveal-delay-3">
+            <div class="icon" aria-hidden="true">📦</div>
+            <h4>Nationwide Reach</h4>
+            <p>We deliver products and services to farmers and businesses across all geopolitical zones of Nigeria.</p>
+          </div>
+          <div class="why-card reveal reveal-delay-4">
+            <div class="icon" aria-hidden="true">💡</div>
+            <h4>Expert Advisory</h4>
+            <p>Our team of agronomists and agric engineers provide hands-on support to help you make the best decisions
+              for your farm.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials" id="testimonials" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <div class="testimonials-header reveal">
+          <span class="section-label">What Farmers Say</span>
+          <h2 class="section-title" id="testimonials-heading">Trusted Across Nigeria</h2>
+        </div>
+        <div class="testimonials-track">
+          <div class="testimonial-card reveal reveal-delay-1">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="testimonial-text">Grow Tech supplied us with top-quality NPK fertilizers for our maize farm in
+              Benue. The yield improvement was remarkable — over 40% increase compared to previous seasons.</p>
+            <div class="testimonial-author">
+              <div class="author-avatar" aria-hidden="true">IA</div>
+              <div class="author-info">
+                <strong>Ibrahim Aliyu</strong>
+                <span>Maize Farmer, Benue State</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card reveal reveal-delay-2">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="testimonial-text">The irrigation system they installed transformed our dry-season farming. We now
+              cultivate year-round, and the after-sales support has been exceptional.</p>
+            <div class="testimonial-author">
+              <div class="author-avatar" aria-hidden="true">AO</div>
+              <div class="author-info">
+                <strong>Adaobi Okonkwo</strong>
+                <span>Vegetable Farm Owner, Niger State</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card reveal reveal-delay-3">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="testimonial-text">Our cooperative has been buying chemicals and fertilizers from Grow Tech for two
+              years. Prices are fair, quality is guaranteed, and delivery is always on time.</p>
+            <div class="testimonial-author">
+              <div class="author-avatar" aria-hidden="true">MG</div>
+              <div class="author-info">
+                <strong>Musa Garba</strong>
+                <span>Farmers Cooperative, Kaduna</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="gallery" id="gallery" aria-labelledby="gallery-heading">
+      <div class="container">
+        <div class="gallery-header reveal">
+          <span class="section-label">Our Work</span>
+          <h2 class="section-title" id="gallery-heading">Jobs Done in the Field</h2>
+          <p>A glimpse of the work we do across Nigeria — from farm inputs and mechanised operations to mining
+            excavation and mineral extraction.</p>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item reveal reveal-delay-1" onclick="openLightbox(0)" tabindex="0" role="button"
+            aria-label="View: Large-Scale Crop Production">
+            <img src="Large-Scale Crop Production.jpg" alt="Large scale crop production operations in Northern Nigeria"
+              loading="lazy" width="400" height="240" />
+            <div class="gallery-caption">
+              <h4>Large-Scale Crop Production</h4>
+              <p>Commercial farming operations across Northern &amp; Middle Belt Nigeria</p>
+            </div>
+          </div>
+          <div class="gallery-item reveal reveal-delay-2" onclick="openLightbox(1)" tabindex="0" role="button"
+            aria-label="View: Harvest Support">
+            <img src="Harvest Support.jpg" alt="Harvest support and post-harvest handling services" loading="lazy"
+              width="400" height="240" />
+            <div class="gallery-caption">
+              <h4>Harvest Support</h4>
+              <p>Post-harvest handling and storage advisory</p>
+            </div>
+          </div>
+          <div class="gallery-item reveal reveal-delay-2" onclick="openLightbox(2)" tabindex="0" role="button"
+            aria-label="View: Farmer Training">
+            <img src="Farmer Training.jpg" alt="Agronomists conducting hands-on farmer training sessions" loading="lazy"
+              width="400" height="240" />
+            <div class="gallery-caption">
+              <h4>Farmer Training</h4>
+              <p>Hands-on agronomic advisory sessions</p>
+            </div>
+          </div>
+          <div class="gallery-item wide reveal reveal-delay-3" onclick="openLightbox(3)" tabindex="0" role="button"
+            aria-label="View: Irrigation System Installation">
+            <img src="Irrigation system.jpg" alt="Drip and sprinkler irrigation system installation on farm"
+              loading="lazy" width="800" height="240" />
+            <div class="gallery-caption">
+              <h4>Irrigation System Installation</h4>
+              <p>Drip and sprinkler systems deployed across dry-season farms</p>
+            </div>
+          </div>
+          <div class="gallery-item reveal reveal-delay-4" onclick="openLightbox(4)" tabindex="0" role="button"
+            aria-label="View: Mechanised Farming">
+            <img src="Mechanised Farming.jpg" alt="Tractor hire and mechanised land preparation services" loading="lazy"
+              width="400" height="240" />
+            <div class="gallery-caption">
+              <h4>Mechanised Farming</h4>
+              <p>Tractor hire and land preparation services</p>
+            </div>
+          </div>
+          <div class="gallery-item reveal reveal-delay-1" onclick="openLightbox(5)" tabindex="0" role="button"
+            aria-label="View: Mining Excavation">
+            <img src="excavator-still.jpg" alt="Hydraulic excavator performing mining excavation on site" loading="lazy"
+              width="400" height="240" />
+            <div class="gallery-caption">
+              <h4>Mining Excavation</h4>
+              <p>Heavy equipment deployed for open-pit mineral extraction</p>
+            </div>
+          </div>
+          <div class="gallery-item reveal reveal-delay-2" onclick="openLightbox(6)" tabindex="0" role="button"
+            aria-label="View: Mineral Sampling">
+            <img src="mineral-sample.jpeg" alt="Fresh mineral sample from active mining site" loading="lazy" width="400"
+              height="240" />
+            <div class="gallery-caption">
+              <h4>Mineral Sampling</h4>
+              <p>On-site sampling and quality assessment of industrial minerals</p>
+            </div>
+          </div>
+          <div class="gallery-item wide reveal reveal-delay-3" onclick="openLightbox(7)" tabindex="0" role="button"
+            aria-label="View: Site Exploration">
+            <img src="lime stone.jpeg" alt="Mining site exploration and earthmoving operations" loading="lazy"
+              width="800" height="240" />
+            <div class="gallery-caption">
+              <h4>Site Exploration &amp; Earthworks</h4>
+              <p>Geological survey, overburden removal and bulk earthmoving</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+      <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close image viewer">×</button>
+      <button class="lightbox-nav prev" onclick="lightboxNav(-1)" aria-label="Previous image">‹</button>
+      <img src="" alt="" id="lightbox-img" />
+      <button class="lightbox-nav next" onclick="lightboxNav(1)" aria-label="Next image">›</button>
+    </div>
+
+    <!-- PRODUCTS -->
+    <section class="products" id="products" aria-labelledby="products-heading">
+      <div class="container">
+        <div class="products-header reveal">
+          <span class="section-label">Our Portfolio</span>
+          <h2 class="section-title" id="products-heading">What We Offer</h2>
+          <p>Explore the breadth of products and services that make Grow Tech Nigeria your one-stop agric and mining
+            partner.</p>
+        </div>
+        <div class="products-grid">
+          <div class="prod-card featured reveal">
+            <img src="Farmer Training.jpg" alt="Crop production and farm services by Grow Tech Nigeria"
+              loading="lazy" />
+            <div class="prod-card-inner">
+              <span class="prod-tag">Flagship</span>
+              <h3>Crop Production &amp; Farm Services</h3>
+              <p>From land preparation to harvest — comprehensive support for smallholder and commercial farms alike.
+              </p>
+            </div>
+          </div>
+          <div class="prod-card reveal reveal-delay-1">
+            <img src="Pesticides & Herbicides.jpg" alt="Registered pesticides and herbicides" loading="lazy" />
+            <div class="prod-card-inner"><span class="prod-tag">Chemicals</span>
+              <h3>Pesticides &amp; Herbicides</h3>
+              <p>Registered and effective crop protection products.</p>
+            </div>
+          </div>
+          <div class="prod-card reveal reveal-delay-2">
+            <img src="7NPK & Organic Blends.jpg" alt="7NPK and organic fertilizer blends" loading="lazy" />
+            <div class="prod-card-inner"><span class="prod-tag">Fertilizers</span>
+              <h3>NPK &amp; Organic Blends</h3>
+              <p>Tailored nutrition for every crop type and soil.</p>
+            </div>
+          </div>
+          <div class="prod-card reveal reveal-delay-1">
+            <img src="tracktor.jpg" alt="Modern tractors and agricultural implements" loading="lazy" />
+            <div class="prod-card-inner"><span class="prod-tag">Machinery</span>
+              <h3>Tractors &amp; Implements</h3>
+              <p>Modern farm equipment for efficient mechanisation.</p>
+            </div>
+          </div>
+          <div class="prod-card reveal reveal-delay-2">
+            <img src="Irrigation system.jpg" alt="Drip and sprinkler irrigation systems" loading="lazy" />
+            <div class="prod-card-inner"><span class="prod-tag">Irrigation</span>
+              <h3>Irrigation Systems</h3>
+              <p>Drip, sprinkler and surface irrigation solutions.</p>
+            </div>
+          </div>
+          <div class="prod-card reveal reveal-delay-1">
+            <img src="mineral-sample.jpeg" alt="Industrial minerals and mining products" loading="lazy" />
+            <div class="prod-card-inner"><span class="prod-tag">Mining</span>
+              <h3>Minerals &amp; Aggregates</h3>
+              <p>Quartz, silica, laterite, clay, limestone, feldspar and construction aggregates.</p>
+            </div>
+          </div>
+          <div class="prod-card reveal reveal-delay-2">
+            <img src="excavator-still.jpg.jpg" alt="Mining equipment and excavation services" loading="lazy" />
+            <div class="prod-card-inner"><span class="prod-tag">Mining</span>
+              <h3>Excavation &amp; Earthworks</h3>
+              <p>Site exploration, open-pit excavation, loading and bulk mineral supply.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MINING -->
+    <section class="mining" id="mining" aria-labelledby="mining-heading">
+      <!-- Animated mining background -->
+      <div class="mining-bg-anim" aria-hidden="true">
+        <div class="mining-particle p1"></div>
+        <div class="mining-particle p2"></div>
+        <div class="mining-particle p3"></div>
+        <div class="mining-particle p4"></div>
+        <div class="mining-particle p5"></div>
+        <div class="mining-particle p6"></div>
+        <div class="mining-particle p7"></div>
+        <div class="mining-particle p8"></div>
+        <div class="mining-ring r1"></div>
+        <div class="mining-ring r2"></div>
+        <div class="mining-ring r3"></div>
+      </div>
+      <div class="container">
+        <div class="mining-header reveal">
+          <span class="section-label">New Division</span>
+          <h2 class="section-title" id="mining-heading">Mining &amp; Mineral Resources</h2>
+          <p>Expanding beyond agriculture into responsible mineral exploration and extraction to support Nigeria’s
+            industrial and agro-industrial growth.</p>
+        </div>
+
+        <!-- Video + Mineral side by side -->
+        <div class="mining-media">
+          <div class="mining-video-wrap reveal">
+            <video controls playsinline poster="excavator-still.jpg.jpg" preload="metadata"
+              aria-label="Excavator operating at mining site">
+              <source src="mining-excavator.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="mining-mineral reveal reveal-delay-1">
+            <img src="mineral-sample.jpeg"
+              alt="Freshly split mineral sample showing crystalline white and translucent structure" loading="lazy"
+              width="600" height="400" />
+            <div class="mining-mineral-caption">Field sample — crystalline mineral specimen from active site</div>
+          </div>
+        </div>
+
+        <div class="mining-content reveal">
+          <h3>Earthworks &amp; Mineral Extraction</h3>
+          <p>Our mining division deploys modern heavy equipment for earthmoving, site preparation, and extraction of
+            high-value industrial minerals. We operate with a strong focus on safety, environmental responsibility, and
+            sustainable resource development. From site clearing and excavation to sample analysis and bulk supply, we
+            deliver end-to-end mining support services.</p>
+          <div class="mining-features">
+            <div class="mining-feat"><span>⛏️</span> Site Excavation</div>
+            <div class="mining-feat"><span>🪨</span> Mineral Sampling</div>
+            <div class="mining-feat"><span>🚛</span> Bulk Earthmoving</div>
+            <div class="mining-feat"><span>🔬</span> Quality Assessment</div>
+          </div>
+        </div>
+
+        <!-- Mining Services -->
+        <div class="mining-services-header reveal">
+          <h3>Mining Services</h3>
+          <p>End-to-end solutions for mineral exploration, extraction and supply</p>
+        </div>
+        <div class="mining-services-grid">
+          <article class="ms-card reveal reveal-delay-1">
+            <img src="site-natural.jpg" alt="Mining site exploration and survey with excavator" loading="lazy"
+              width="400" height="150" />
+            <div class="ms-card-body">
+              <span class="ms-icon">🗺️</span>
+              <h4>Exploration &amp; Survey</h4>
+              <p>Preliminary site assessment, geological mapping and resource evaluation.</p>
+              <ul class="ms-list">
+                <li>Site reconnaissance</li>
+                <li>Sample collection</li>
+                <li>Resource estimation</li>
+              </ul>
+            </div>
+          </article>
+          <article class="ms-card reveal reveal-delay-2">
+            <img src="mini 2.jpg" alt=" Hydraulic excavator performing extraction on site" loading="lazy" width="400"
+              height="150" />
+            <div class="ms-card-body">
+              <span class="ms-icon">⛏️</span>
+              <h4>Excavation &amp; Extraction</h4>
+              <p>Mechanised digging, loading and extraction of industrial minerals.</p>
+              <ul class="ms-list">
+                <li>Open-pit excavation</li>
+                <li>Overburden removal</li>
+                <li>Controlled extraction</li>
+              </ul>
+            </div>
+          </article>
+          <article class="ms-card reveal reveal-delay-1">
+            <img src="mineral-samples-lab-clean.jpg" alt="Mineral sample for quality control and grade analysis"
+              loading="lazy" width="400" height="150" />
+            <div class="ms-card-body">
+              <span class="ms-icon">🧪</span>
+              <h4>Sampling &amp; Quality Control</h4>
+              <p>On-site and laboratory testing to ensure mineral grade and consistency.</p>
+              <ul class="ms-list">
+                <li>Channel &amp; bulk sampling</li>
+                <li>Grade analysis</li>
+                <li>Quality certification support</li>
+              </ul>
+            </div>
+          </article>
+          <article class="ms-card reveal reveal-delay-2">
+            <img src="Heavy equipment supporting processing and bulk supply.jpg"
+              alt="Heavy equipment supporting processing and bulk supply" loading="lazy" width="400" height="150" />
+            <div class="ms-card-body">
+              <span class="ms-icon">📦</span>
+              <h4>Processing &amp; Supply</h4>
+              <p>Crushing, screening, stockpiling and delivery of mineral products.</p>
+              <ul class="ms-list">
+                <li>Primary crushing</li>
+                <li>Screening &amp; sorting</li>
+                <li>Bulk logistics &amp; delivery</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <!-- Mineral Deposit Types -->
+        <div class="mining-deposits-header reveal">
+          <h3>Mineral Deposit Types</h3>
+          <p>Key industrial and agro-industrial minerals we target across Nigeria</p>
+        </div>
+        <div class="mining-deposits-grid">
+          <article class="deposit-card reveal reveal-delay-1">
+            <img src="Quartz and silica mineral sample.jpg" alt="Quartz and silica mineral sample" loading="lazy"
+              width="400" height="140" />
+            <div class="deposit-card-body">
+              <h4>🪨 Quartz / Silica</h4>
+              <p>High-purity crystalline quartz and silica sand used in glass, ceramics, construction and industrial
+                applications.</p>
+              <span class="deposit-tag">Industrial Mineral</span>
+            </div>
+          </article>
+          <article class="deposit-card reveal reveal-delay-2">
+            <img src="Laterite and iron-rich soil excavation.jpg" alt="Laterite and iron-rich soil excavation"
+              loading="lazy" width="400" height="140" />
+            <div class="deposit-card-body">
+              <h4>🟤 Laterite &amp; Iron Oxide</h4>
+              <p>Lateritic soils and iron-rich deposits suitable for construction fill, road base and industrial
+                feedstock.</p>
+              <span class="deposit-tag">Construction</span>
+            </div>
+          </article>
+          <article class="deposit-card reveal reveal-delay-1">
+            <img src="Clay and kaolin deposit site.jpg" alt="Clay and kaolin deposit site" loading="lazy" width="400"
+              height="140" />
+            <div class="deposit-card-body">
+              <h4>🧱 Clay &amp; Kaolin</h4>
+              <p>Ceramic clays, kaolin and related deposits for pottery, tiles, paper and agro-processing uses.</p>
+              <span class="deposit-tag">Ceramic &amp; Agro</span>
+            </div>
+          </article>
+          <article class="deposit-card reveal reveal-delay-2">
+            <img src="Limestone and industrial carbonate deposits.jpg" alt="Limestone and industrial carbonate deposits"
+              loading="lazy" width="400" height="140" />
+            <div class="deposit-card-body">
+              <h4>⬜ Limestone &amp; Carbonates</h4>
+              <p>Limestone and related carbonate minerals for cement, soil conditioning and industrial lime production.
+              </p>
+              <span class="deposit-tag">Cement &amp; Soil</span>
+            </div>
+          </article>
+          <article class="deposit-card reveal reveal-delay-1">
+            <img src="Feldspar and industrial mineral deposits.jpg" alt="Feldspar and industrial mineral deposits"
+              loading="lazy" width="400" height="140" />
+            <div class="deposit-card-body">
+              <h4>💎 Feldspar &amp; Industrial Rocks</h4>
+              <p>Feldspar and associated industrial rocks used in ceramics, glass and as construction aggregates.</p>
+              <span class="deposit-tag">Industrial Rock</span>
+            </div>
+          </article>
+          <article class="deposit-card reveal reveal-delay-2">
+            <img src="Sand and gravel aggregate deposits.jpg" alt="Sand and gravel aggregate deposits" loading="lazy"
+              width="400" height="140" />
+            <div class="deposit-card-body">
+              <h4>🏖️ Sand &amp; Gravel</h4>
+              <p>Construction-grade sand, gravel and aggregates for concrete, road works and building projects.</p>
+              <span class="deposit-tag">Aggregates</span>
+            </div>
+          </article>
+        </div>
+
+        <!-- Mining Equipment -->
+        <div class="mining-equip-header reveal">
+          <h3>Mining Equipment</h3>
+          <p>Heavy machinery and tools we deploy on site</p>
+        </div>
+        <div class="mining-equip-grid">
+          <div class="equip-card reveal reveal-delay-1">
+            <img src="Hydraulic excavator 922D on mining site.jpg" alt="Hydraulic excavator 922D on mining site"
+              loading="lazy" width="400" height="160" />
+            <div class="equip-card-body">
+              <span class="equip-icon">🚧</span>
+              <h4>Hydraulic Excavators</h4>
+              <p>Tracked excavators (incl. 922D class) for digging, loading and site preparation.</p>
+            </div>
+          </div>
+          <div class="equip-card reveal reveal-delay-2">
+            <img src="Excavator and earthmoving equipment on site.png" alt="Excavator and earthmoving equipment on site"
+              loading="lazy" width="400" height="160" />
+            <div class="equip-card-body">
+              <span class="equip-icon">🚛</span>
+              <h4>Haul Trucks &amp; Tippers</h4>
+              <p>Heavy-duty tippers for moving overburden and bulk mineral material.</p>
+            </div>
+          </div>
+          <div class="equip-card reveal reveal-delay-1">
+            <img src="excavator-wide.jpg" alt="Heavy machinery for loading and grading" loading="lazy" width="400"
+              height="160" />
+            <div class="equip-card-body">
+              <span class="equip-icon">🏗️</span>
+              <h4>Loaders &amp; Dozers</h4>
+              <p>Wheel loaders and bulldozers for stockpiling, grading and land clearing.</p>
+            </div>
+          </div>
+          <div class="equip-card reveal reveal-delay-2">
+            <img src="Mineral sampling and support equipment.png" alt="Mineral sampling and support equipment"
+              loading="lazy" width="400" height="160" />
+            <div class="equip-card-body">
+              <span class="equip-icon">🔧</span>
+              <h4>Support &amp; Tools</h4>
+              <p>Crushing, screening support and sampling equipment for quality control.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mining-cta reveal">
+          <a href="#contact" class="btn btn-gold">Enquire About Mining Services →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA STRIP -->
+    <section class="cta-strip" aria-labelledby="cta-heading">
+      <div class="container">
+        <h2 id="cta-heading">Ready to Grow with Us?</h2>
+        <p>Whether you're a smallholder farmer, cooperative, or large agribusiness — we have the tools and expertise to
+          help you succeed.</p>
+        <div class="cta-strip-actions">
+          <a href="#contact" class="btn btn-dark">Contact Us Today →</a>
+          <a href="tel:+2348038382777" class="btn btn-outline">📞 Call Now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info">
+            <span class="section-label reveal">Get In Touch</span>
+            <h2 class="section-title reveal reveal-delay-1" id="contact-heading">Let's Talk Agriculture</h2>
+            <p class="reveal reveal-delay-2">Reach out to our team for product inquiries, bulk orders, technical
+              advisory, or partnership opportunities. We're here to help your farm and business thrive.</p>
+            <div class="contact-details reveal reveal-delay-3">
+              <div class="contact-detail">
+                <div class="cd-icon" aria-hidden="true">📍</div>
+                <div class="cd-text">
+                  <strong>Office Address</strong>
+                  <span>Room 317, Block D, Old Federal Secretariat, Area 1-Durumi Garki, Abuja.</span>
+                </div>
+              </div>
+              <div class="contact-detail">
+                <div class="cd-icon" aria-hidden="true">📞</div>
+                <div class="cd-text">
+                  <strong>Phone</strong>
+                  <a href="tel:+2348038382777">+234 803 838 2777</a>
+                </div>
+              </div>
+              <div class="contact-detail">
+                <div class="cd-icon" aria-hidden="true">✉️</div>
+                <div class="cd-text">
+                  <strong>Email</strong>
+                  <a href="mailto:castor505050@gmail.com">castor505050@gmail.com</a>
+                </div>
+              </div>
+              <div class="contact-detail">
+                <div class="cd-icon" aria-hidden="true">🕒</div>
+                <div class="cd-text">
+                  <strong>Working Hours</strong>
+                  <span>Mon – Sat: 8 AM – 6 PM</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form reveal reveal-delay-2">
+            <h3>Send Us a Message</h3>
+            <div id="form-wrapper">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="first-name">First Name <span aria-hidden="true">*</span></label>
+                  <input type="text" id="first-name" name="firstName" placeholder="e.g. Chukwuemeka" required
+                    autocomplete="given-name" />
+                  <span class="form-error" id="err-fname">Please enter your first name.</span>
+                </div>
+                <div class="form-group">
+                  <label for="last-name">Last Name <span aria-hidden="true">*</span></label>
+                  <input type="text" id="last-name" name="lastName" placeholder="e.g. Okafor" required
+                    autocomplete="family-name" />
+                  <span class="form-error" id="err-lname">Please enter your last name.</span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address <span aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required
+                  autocomplete="email" />
+                <span class="form-error" id="err-email">Please enter a valid email address.</span>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+234 800 000 0000" autocomplete="tel" />
+              </div>
+              <div class="form-group">
+                <label for="service">Service Interest</label>
+                <select id="service" name="service">
+                  <option value="">Select a service…</option>
+                  <option>Crop Production</option>
+                  <option>Agricultural Chemicals</option>
+                  <option>Fertilizers</option>
+                  <option>Agricultural Machinery</option>
+                  <option>Irrigation Systems</option>
+                  <option>General Inquiry</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Message <span aria-hidden="true">*</span></label>
+                <textarea id="message" name="message" placeholder="Tell us about your farm needs or inquiry…"
+                  required></textarea>
+                <span class="form-error" id="err-message">Please enter your message.</span>
+              </div>
+              <button class="btn btn-primary form-submit" id="submit-btn" type="button" onclick="submitForm()">
+                Send Message ✉️
+              </button>
+              <div class="ai-response" id="ai-response" aria-live="polite">
+                <div class="ai-response-header"><span>🤖</span> Grow Tech AI Assistant</div>
+                <div id="ai-response-content">
+                  <div class="typing-indicator" id="typing"><span></span><span></span><span></span></div>
+                  <div class="ai-response-text" id="ai-text" style="display:none;"></div>
+                </div>
+              </div>
+            </div>
+            <div class="form-success" id="form-success">
+              <div class="success-icon">✅</div>
+              <h4 style="font-family:'Playfair Display',serif;color:var(--green-deep);margin-bottom:.5rem;">Message
+                Sent!</h4>
+              <p style="color:var(--text-mid);font-size:.95rem;">Thank you for reaching out. Our team will contact you
+                within one business day.</p>
+              <button class="btn btn-primary" style="margin-top:1.5rem;" onclick="resetForm()">Send Another
+                Message</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+            <div class="logo-icon">
+              <img src="logo.jpg" alt="Grow Tech Agro Logo" loading="lazy" />
+            </div>
+            <div class="logo-text">
+              <strong>Grow Tech Agro Nig. Ltd</strong>
+              <span>Agro Alliance · Mining &amp; Minerals</span>
+            </div>
+          </div>
+          <p>Delivering quality agricultural inputs and services to empower Nigerian farmers and agribusinesses for a
+            food-secure future.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Services</h5>
+          <a href="#services">Crop Production</a>
+          <a href="#services">Agro Chemicals</a>
+          <a href="#services">Fertilizers</a>
+          <a href="#services">Farm Machinery</a>
+          <a href="#services">Irrigation Systems</a>
+          <a href="#mining">Mining &amp; Minerals</a>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <a href="#about">About Us</a>
+          <a href="#mining">Mining Division</a>
+          <a href="#gallery">Our Work</a>
+          <a href="#products">Our Products</a>
+          <a href="#testimonials">Reviews</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <a href="tel:+2348038382777">+234 803 838 2777</a>
+          <a href="mailto:castor505050@gmail.com">castor505050@gmail.com</a>
+          <a href="#contact">Room 317, Block D, Old Federal Secretariat, Abuja</a>
+          <a href="#contact">Mon–Sat · 8AM–6PM</a>
+        </div>
+      </div>
+
+      <!-- PARTNERS STRIP -->
+      <div class="partners-strip">
+        <span class="partners-label">Our Partners &amp; Agencies</span>
+        <div class="partners-row">
+          <div class="partner-item">
+            <div class="partner-initials"><img
+                src="Castor growers processors and marketers association of Nigeria (1).jpg" alt="CASGPAM logo"></div>
+            <span>CASGPMAN</span>
+          </div>
+          <div class="partner-item">
+            <div class="partner-initials"><img src="FMITI LOGO.png" alt="FMITI logo"></div>
+            <span>Fed. Min. of Industry, Trade &amp; Investment</span>
+          </div>
+          <div class="partner-item">
+            <div class="partner-initials"><img src="FACAN logo.jpg" alt="FACAN logo"></div>
+            <span>Federation of Agricultural Commodity Assoc. of Nigeria</span>
+          </div>
+          <div class="partner-item">
+            <div class="partner-initials"><img src="Ministry of agric logo2.jpg" alt="FMAFS logo"></div>
+            <span>Federal Ministry of Agriculture &amp; Food Security</span>
+          </div>
+          <div class="partner-item">
+            <div class="partner-initials"><img src="rawmateria logo.jpg" alt="RMRDC logo"></div>
+            <span>Raw Materials Research &amp; Dev. Council</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 Grow Tech Agro Nig. Ltd · An <strong>Agro Alliance</strong> Company. All rights reserved.</span>
+        <span>Built for Nigerian Agriculture 🌾</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Chat Button -->
+  <a href="https://wa.me/2348038382777?text=Hello%20Grow%20Tech%20Agro%2C%20I%20would%20like%20to%20enquire%20about%20your%20services."
+    class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">
+    <span class="wa-tooltip">Chat on WhatsApp</span>
+    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path
+        d="M16.004 0C7.174 0 .004 7.17.004 15.999c0 2.82.736 5.563 2.134 7.98L.69 31.31l7.52-1.97A15.94 15.94 0 0 0 16.004 32c8.83 0 16-7.17 16-16.001C32.004 7.17 24.834 0 16.004 0zm0 29.28a13.25 13.25 0 0 1-6.75-1.85l-.484-.287-4.91 1.287 1.31-4.783-.315-.49a13.23 13.23 0 0 1-2.03-7.16c0-7.32 5.96-13.28 13.28-13.28s13.28 5.96 13.28 13.28-5.96 13.28-13.28 13.28zm7.28-9.94c-.4-.2-2.36-1.16-2.73-1.29-.36-.13-.63-.2-.89.2-.27.4-1.03 1.29-1.26 1.55-.23.27-.46.3-.86.1-.4-.2-1.68-.62-3.2-1.97-1.18-1.05-1.98-2.35-2.21-2.75-.23-.4-.02-.62.17-.82.18-.18.4-.46.6-.7.2-.23.27-.4.4-.66.13-.27.07-.5-.03-.7-.1-.2-.89-2.14-1.22-2.93-.32-.77-.65-.66-.89-.67h-.76c-.27 0-.7.1-1.07.5-.36.4-1.4 1.37-1.4 3.34s1.43 3.87 1.63 4.14c.2.27 2.82 4.3 6.83 6.03 4.01 1.73 4.01 1.15 4.73 1.08.72-.07 2.36-.96 2.7-1.89.33-.93.33-1.72.23-1.89-.1-.17-.36-.27-.76-.46z" />
+    </svg>
+  </a>
+
+  <button class="back-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})"
+    aria-label="Back to top">↑</button>
+
+  <script>
+    /* HAMBURGER */
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+    hamburger.addEventListener('click', () => {
+      const isOpen = hamburger.classList.toggle('open');
+      mobileMenu.classList.toggle('open');
+      hamburger.setAttribute('aria-expanded', isOpen);
+    });
+    function closeMenu() {
+      hamburger.classList.remove('open');
+      mobileMenu.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+    }
+    document.addEventListener('click', e => {
+      if (mobileMenu.classList.contains('open') && !mobileMenu.contains(e.target) && !hamburger.contains(e.target)) {
+        closeMenu();
+      }
+    });
+
+    /* SCROLL EFFECTS */
+    const header = document.getElementById('site-header');
+    const backTop = document.getElementById('backTop');
+    const progBar = document.getElementById('progress-bar');
+    window.addEventListener('scroll', () => {
+      const scrolled = window.scrollY;
+      header.classList.toggle('scrolled', scrolled > 50);
+      backTop.classList.toggle('visible', scrolled > 400);
+      const docH = document.documentElement.scrollHeight - window.innerHeight;
+      progBar.style.width = docH > 0 ? (scrolled / docH * 100) + '%' : '0%';
+    }, {passive: true});
+
+    /* SCROLL REVEAL */
+    const reveals = document.querySelectorAll('.reveal');
+    const revealObs = new IntersectionObserver(entries => {
+      entries.forEach(e => {if (e.isIntersecting) {e.target.classList.add('visible'); revealObs.unobserve(e.target);} });
+    }, {threshold: 0.1});
+    reveals.forEach(el => revealObs.observe(el));
+
+    /* ANIMATED COUNTERS */
+    document.querySelectorAll('.counter').forEach(el => {
+      new IntersectionObserver(([entry], obs) => {
+        if (!entry.isIntersecting) return;
+        const target = parseInt(el.dataset.target);
+        const start = Date.now();
+        const tick = () => {
+          const p = Math.min((Date.now() - start) / 1800, 1);
+          el.textContent = Math.round((1 - Math.pow(1 - p, 3)) * target);
+          if (p < 1) requestAnimationFrame(tick);
+        };
+        requestAnimationFrame(tick);
+        obs.unobserve(el);
+      }, {threshold: 0.5}).observe(el);
+    });
+
+    /* LIGHTBOX */
+    const galleryImages = [
+      {src: 'Large-Scale Crop Production.jpg', alt: 'Large-Scale Crop Production'},
+      {src: 'Harvest Support.jpg', alt: 'Harvest Support'},
+      {src: 'Farmer Training.jpg', alt: 'Farmer Training'},
+      {src: 'Irrigation system.jpg', alt: 'Irrigation System Installation'},
+      {src: 'Mechanised Farming.jpg', alt: 'Mechanised Farming'},
+      {src: 'excavator-still.jpg', alt: 'Mining Excavation'},
+      {src: 'mineral-sample.jpeg', alt: 'Mineral Sampling'},
+      {src: 'excavator-wide.jpg', alt: 'Site Exploration & Earthworks'},
+    ];
+    let lbIdx = 0;
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    function openLightbox(idx) {lbIdx = idx; lightboxImg.src = galleryImages[idx].src; lightboxImg.alt = galleryImages[idx].alt; lightbox.classList.add('active'); document.body.style.overflow = 'hidden';}
+    function closeLightbox() {lightbox.classList.remove('active'); document.body.style.overflow = '';}
+    function lightboxNav(dir) {lbIdx = (lbIdx + dir + galleryImages.length) % galleryImages.length; lightboxImg.src = galleryImages[lbIdx].src; lightboxImg.alt = galleryImages[lbIdx].alt;}
+    lightbox.addEventListener('click', e => {if (e.target === lightbox) closeLightbox();});
+    document.addEventListener('keydown', e => {
+      if (!lightbox.classList.contains('active')) return;
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowLeft') lightboxNav(-1);
+      if (e.key === 'ArrowRight') lightboxNav(1);
+    });
+    document.querySelectorAll('.gallery-item[tabindex]').forEach((item, idx) => {
+      item.addEventListener('keypress', e => {if (e.key === 'Enter' || e.key === ' ') openLightbox(idx);});
+    });
+
+    /* CONTACT FORM */
+    function validateForm() {
+      let valid = true;
+      [['first-name', 'err-fname'], ['last-name', 'err-lname'], ['email', 'err-email'], ['message', 'err-message']].forEach(([id, errId]) => {
+        const inp = document.getElementById(id);
+        const err = document.getElementById(errId);
+        const bad = !inp.value.trim() || (id === 'email' && inp.value && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(inp.value));
+        inp.style.borderColor = bad ? '#c62828' : '';
+        err.style.display = bad ? 'block' : 'none';
+        if (bad) valid = false;
+      });
+      return valid;
+    }
+
+    async function submitForm() {
+      if (!validateForm()) return;
+      const btn = document.getElementById('submit-btn');
+      btn.classList.add('btn-loading'); btn.textContent = 'Sending…';
+      const firstName = document.getElementById('first-name').value.trim();
+      const service = document.getElementById('service').value || 'General Inquiry';
+      const message = document.getElementById('message').value.trim();
+      const aiBox = document.getElementById('ai-response');
+      const typing = document.getElementById('typing');
+      const aiText = document.getElementById('ai-text');
+      aiBox.classList.add('visible'); typing.style.display = 'flex'; aiText.style.display = 'none';
+      try {
+        const res = await fetch('https://api.anthropic.com/v1/messages', {
+          method: 'POST', headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({
+            model: 'claude-sonnet-4-20250514', max_tokens: 1000,
+            system: `You are a friendly customer service rep for Grow Tech Agro Nig. Ltd, an agricultural company in Nigeria (Agro Alliance). Write a warm, professional 3-4 sentence auto-reply. Address the customer by first name. Acknowledge their service interest. Say a team member follows up within one business day. Sign off as "The Grow Tech Agro Team". No markdown.`,
+            messages: [{role: 'user', content: `Name: ${firstName}\nService: ${service}\nMessage: ${message}`}]
+          })
+        });
+        const data = await res.json();
+        const reply = data.content?.[0]?.text || `Thank you, ${firstName}! We've received your inquiry. Our team will contact you shortly. — The Grow Tech Agro Team`;
+        typing.style.display = 'none'; aiText.style.display = 'block'; aiText.textContent = '';
+        let i = 0;
+        const t = setInterval(() => {aiText.textContent += reply[i++]; if (i >= reply.length) {clearInterval(t); setTimeout(() => {document.getElementById('form-wrapper').style.display = 'none'; document.getElementById('form-success').classList.add('visible');}, 3000);} }, 18);
+      } catch {
+        typing.style.display = 'none'; aiText.style.display = 'block';
+        aiText.textContent = `Thank you, ${firstName}! We've received your inquiry about ${service}. Our team will contact you within one business day. — The Grow Tech Agro Team`;
+        setTimeout(() => {document.getElementById('form-wrapper').style.display = 'none'; document.getElementById('form-success').classList.add('visible');}, 3500);
+      }
+      btn.classList.remove('btn-loading');
+    }
+
+    function resetForm() {
+      document.getElementById('form-wrapper').style.display = '';
+      document.getElementById('form-success').classList.remove('visible');
+      document.getElementById('ai-response').classList.remove('visible');
+      ['first-name', 'last-name', 'email', 'phone', 'service', 'message'].forEach(id => document.getElementById(id).value = '');
+      document.getElementById('submit-btn').textContent = 'Send Message ✉️';
+    }
+  </script>
+</body>
+
+</html>
